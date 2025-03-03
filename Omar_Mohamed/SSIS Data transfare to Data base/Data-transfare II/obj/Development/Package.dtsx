@@ -1,0 +1,2949 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/21/2025 1:43:39 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="OMAR-M-AZIZ"
+  DTS:CreatorName="OMAR-M-AZIZ\omara"
+  DTS:DTSID="{34039051-9E74-4BF0-9770-CBA2BB615731}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{2804DF30-E3C6-494C-8763-C36132FA5F27}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{F35B63FA-BA3A-4B19-BB19-639B2F441CB9}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\import files\Data analysis\ITI creativa-Power-BI development\Graduation Project\Olist-E-Commerce-ITI-graduation-project-main\All data\olist_geolocation_dataset1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{D14EB1D8-78A8-4DB8-B141-A3472E920EA4}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\import files\Data analysis\ITI creativa-Power-BI development\Graduation Project\Olist-E-Commerce-ITI-graduation-project-main\All data\olist_order_items_dataset1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{26BEFC29-6AE1-405A-AF8C-A189D418F1A5}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\import files\Data analysis\ITI creativa-Power-BI development\Graduation Project\Olist-E-Commerce-ITI-graduation-project-main\All data\olist_order_reviews_dataset1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{97713BFD-AF4A-4280-AC15-FC0204EAB4BB}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\import files\Data analysis\ITI creativa-Power-BI development\Graduation Project\Olist-E-Commerce-ITI-graduation-project-main\All data\olist_order_payments_dataset1.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0CA127D4-41AF-4BC2-8BFB-B25AB28241CB}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\import files\Data analysis\ITI creativa-Power-BI development\Graduation Project\Olist-E-Commerce-ITI-graduation-project-main\All data\olist_geolocation_dataset.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;geolocation_zip_code_prefix&quot;"
+              DTS:DTSID="{7F687C2E-E070-4A5A-91D3-95B6B0620B1F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;geolocation_lat&quot;"
+              DTS:DTSID="{A8FB84A9-FFE8-4A5B-B453-E3EF77EE3695}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;geolocation_lng&quot;"
+              DTS:DTSID="{E9473671-CD44-4CD0-A8B0-9FCEB5D9FDE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;geolocation_city&quot;"
+              DTS:DTSID="{DB818396-6503-4C8B-8DA6-8788F8BC8C99}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;geolocation_state&quot;"
+              DTS:DTSID="{A39340A6-D4BF-464F-ACA9-5DE0DD8C1DFC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{96CD8E5E-51FC-4857-9A85-562D59D5BA75}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\import files\Data analysis\ITI creativa-Power-BI development\Graduation Project\Olist-E-Commerce-ITI-graduation-project-main\All data\olist_order_payments_dataset.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_id"
+              DTS:DTSID="{AF213E3C-7985-45FD-BD71-4540C179CC7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="payment_sequential"
+              DTS:DTSID="{317119CD-3375-4AE9-913D-E3A4E8BA2214}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="payment_type"
+              DTS:DTSID="{D5EDC04F-7B54-4575-B8BC-D4018D633229}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="payment_installments"
+              DTS:DTSID="{DAF9D856-8DB6-4B12-9060-222252B4179B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="payment_value"
+              DTS:DTSID="{FEA42B92-4722-482E-914A-960CE11EFEF2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EE5E6367-F004-494C-917C-56D3B108CAF8}"
+      DTS:ObjectName="Flat File Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\import files\Data analysis\ITI creativa-Power-BI development\Graduation Project\Olist-E-Commerce-ITI-graduation-project-main\All data\olist_orders_dataset.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_id"
+              DTS:DTSID="{620DE318-166E-481B-A7F0-6A29901B5303}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="customer_id"
+              DTS:DTSID="{8A64C024-6193-4564-818D-5D42589B4B8B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_status"
+              DTS:DTSID="{3E85E909-E22E-4951-80A6-1D38BE56E84C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_purchase_timestamp"
+              DTS:DTSID="{316D20FD-359B-4D04-968A-F3E483DA96FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_approved_at"
+              DTS:DTSID="{7C9517FD-24EC-4854-9DD2-94160DA847A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_delivered_carrier_date"
+              DTS:DTSID="{6A410297-8E69-4FB4-B289-7CB4DE837912}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_delivered_customer_date"
+              DTS:DTSID="{DDAD89CE-70EE-4A73-9AB2-5244DF6AE889}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_estimated_delivery_date"
+              DTS:DTSID="{6AF41F43-FB7F-4462-A88C-EBA3ECA2CFAA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 4]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{68FE2EDC-5D36-451B-AE99-DCC29384422C}"
+      DTS:ObjectName="Flat File Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\import files\Data analysis\ITI creativa-Power-BI development\Graduation Project\Olist-E-Commerce-ITI-graduation-project-main\All data\olist_sellers_dataset.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="seller_id"
+              DTS:DTSID="{627EB2D6-7DA6-49C1-8027-F2507B4A444C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="seller_zip_code_prefix"
+              DTS:DTSID="{E0A35951-3393-41AA-9C0A-D04E3FEF2D06}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="seller_city"
+              DTS:DTSID="{E1E567E9-8E0F-4179-8FAF-0A1BEE7B3AEF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="seller_state"
+              DTS:DTSID="{31211F45-137B-4E31-8F8C-04BF7DF3BDE9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 5]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{FE92C33B-F423-44F9-BA82-8B0A8A3EE868}"
+      DTS:ObjectName="Flat File Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\import files\Data analysis\ITI creativa-Power-BI development\Graduation Project\Olist-E-Commerce-ITI-graduation-project-main\All data\olist_order_reviews_dataset.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_id&quot;"
+              DTS:DTSID="{9ED4469A-E4D2-4EFB-AEDB-12286EF3C292}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;order_id&quot;"
+              DTS:DTSID="{50A3237F-E856-40BB-9171-49B66F2EBEC5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_score&quot;"
+              DTS:DTSID="{52CF17B9-3BDD-43EA-BF17-6D7E743D2854}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_comment_title&quot;"
+              DTS:DTSID="{342A2451-0BE4-4E19-8C7C-676C37082FB3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_comment_message&quot;"
+              DTS:DTSID="{40EDBB27-65F7-40CE-B4B0-A988E1AA1DCB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_creation_date&quot;"
+              DTS:DTSID="{CDD661B0-09A3-40AC-A660-530FCBBD3F20}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_answer_timestamp&quot;"
+              DTS:DTSID="{B22B4748-934C-4A75-9BAA-8309E05B69E9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 6]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CE8A5EE0-7F41-42B9-B5ED-7C86A00A719A}"
+      DTS:ObjectName="Flat File Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\import files\Data analysis\ITI creativa-Power-BI development\Graduation Project\Olist-E-Commerce-ITI-graduation-project-main\All data\olist_orders_dataset.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_id"
+              DTS:DTSID="{5744A904-DE99-442D-A41A-78B997CC3D7B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="customer_id"
+              DTS:DTSID="{3EF8917B-F11B-4E0A-B705-56DF067E4A9F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_status"
+              DTS:DTSID="{1667D7AA-854D-4016-8649-076DEF171F11}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_purchase_timestamp"
+              DTS:DTSID="{622974F1-E5D7-4402-AF66-0B0860AAAA3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_approved_at"
+              DTS:DTSID="{DA15A66B-4C4F-49D2-8C4A-C103EA4B691F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_delivered_carrier_date"
+              DTS:DTSID="{FC7F48A8-7CF6-4F5F-8FFC-575C8BF7ACCB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_delivered_customer_date"
+              DTS:DTSID="{0719718D-4B75-403A-B783-94D2FA290E1A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_estimated_delivery_date"
+              DTS:DTSID="{91C2848B-4904-4C29-9EAC-50FA302978A9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[OMAR-M-AZIZ.olistSales]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3A981B96-5BB5-46BB-98E2-02EA56AC55BB}"
+      DTS:ObjectName="OMAR-M-AZIZ.olistSales">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=OMAR-M-AZIZ;Initial Catalog=olistSales;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{3A981B96-5BB5-46BB-98E2-02EA56AC55BB}OMAR-M-AZIZ.olistSales;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[order_details]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2D3A2B99-731B-47D6-96CC-1F8261CDE958}"
+      DTS:ObjectName="order_details">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\import files\Data analysis\ITI creativa-Power-BI development\Graduation Project\Olist-E-Commerce-ITI-graduation-project-main\All data\olist_order_items_dataset.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_id"
+              DTS:DTSID="{202533C3-2230-4CA1-8977-DE6C47AB6CEB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="order_item_id"
+              DTS:DTSID="{D7A296B4-92F0-4A80-B74B-ACC0FC4554BF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="product_id"
+              DTS:DTSID="{8FE8188C-5BAA-49F9-8D3B-63A8B9B3BC90}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="seller_id"
+              DTS:DTSID="{55032B51-BB76-4BFF-B955-03546D6BFF95}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="shipping_limit_date"
+              DTS:DTSID="{BFF6D194-CA22-45A2-814A-97F40C0CB621}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price"
+              DTS:DTSID="{4807050B-F1B8-4B90-B521-337681DDFFB8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="freight_value"
+              DTS:DTSID="{9B80C40D-76D1-4E07-AA00-BE0D5C186435}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{0149D38D-E72B-4D20-BB2E-CB985FDEABF4}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">olist_geolocation_dataset$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_zip_code_prefix]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[geolocation_zip_code_prefix]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_zip_code_prefix]"
+                      name="geolocation_zip_code_prefix"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_lat]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[geolocation_lat]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_lat]"
+                      name="geolocation_lat"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_lng]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[geolocation_lng]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_lng]"
+                      name="geolocation_lng"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_city]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[geolocation_city]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_city]"
+                      name="geolocation_city"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_state]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[geolocation_state]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_state]"
+                      name="geolocation_state"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[geolocation_zip_code_prefix]"
+                      dataType="r8"
+                      name="geolocation_zip_code_prefix" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[geolocation_lat]"
+                      dataType="r8"
+                      name="geolocation_lat" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[geolocation_lng]"
+                      dataType="r8"
+                      name="geolocation_lng" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[geolocation_city]"
+                      dataType="wstr"
+                      length="255"
+                      name="geolocation_city" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[geolocation_state]"
+                      dataType="wstr"
+                      length="255"
+                      name="geolocation_state" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[geolocation_zip_code_prefix]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[geolocation_zip_code_prefix]"
+                      name="geolocation_zip_code_prefix" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[geolocation_lat]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[geolocation_lat]"
+                      name="geolocation_lat" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[geolocation_lng]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[geolocation_lng]"
+                      name="geolocation_lng" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[geolocation_city]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[geolocation_city]"
+                      name="geolocation_city" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[geolocation_state]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[geolocation_state]"
+                      name="geolocation_state" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\geo location"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="geo location"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[geo_location]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\geo location.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OMAR-M-AZIZ.olistSales]"
+                  connectionManagerRefId="Package.ConnectionManagers[OMAR-M-AZIZ.olistSales]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].Columns[geolocation_zip_code_prefix]"
+                      cachedDataType="r8"
+                      cachedName="geolocation_zip_code_prefix"
+                      externalMetadataColumnId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].ExternalColumns[geolocation_zip_code_prefix]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_zip_code_prefix]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].Columns[geolocation_lat]"
+                      cachedDataType="r8"
+                      cachedName="geolocation_lat"
+                      externalMetadataColumnId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].ExternalColumns[geolocation_lat]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_lat]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].Columns[geolocation_lng]"
+                      cachedDataType="r8"
+                      cachedName="geolocation_lng"
+                      externalMetadataColumnId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].ExternalColumns[geolocation_lng]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_lng]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].Columns[geolocation_city]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="geolocation_city"
+                      externalMetadataColumnId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].ExternalColumns[geolocation_city]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_city]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].Columns[geolocation_state]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="geolocation_state"
+                      externalMetadataColumnId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].ExternalColumns[geolocation_state]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[geolocation_state]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].ExternalColumns[geolocation_zip_code_prefix]"
+                      dataType="r8"
+                      name="geolocation_zip_code_prefix" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].ExternalColumns[geolocation_lat]"
+                      dataType="r8"
+                      name="geolocation_lat" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].ExternalColumns[geolocation_lng]"
+                      dataType="r8"
+                      name="geolocation_lng" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].ExternalColumns[geolocation_city]"
+                      dataType="wstr"
+                      length="255"
+                      name="geolocation_city" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input].ExternalColumns[geolocation_state]"
+                      dataType="wstr"
+                      length="255"
+                      name="geolocation_state" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\geo location.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\geo location.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\geo location.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\geo location.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\geo location.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Orders"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Orders"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Orders]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Orders.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OMAR-M-AZIZ.olistSales]"
+                  connectionManagerRefId="Package.ConnectionManagers[OMAR-M-AZIZ.olistSales]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].Columns[order_id]"
+                      cachedDataType="wstr"
+                      cachedLength="300"
+                      cachedName="order_id"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_id]"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].Columns[customer_id]"
+                      cachedDataType="wstr"
+                      cachedLength="300"
+                      cachedName="customer_id"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[customer_id]"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[customer_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].Columns[order_status]"
+                      cachedDataType="wstr"
+                      cachedLength="300"
+                      cachedName="order_status"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_status]"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_status]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].Columns[order_purchase_timestamp]"
+                      cachedDataType="wstr"
+                      cachedLength="300"
+                      cachedName="order_purchase_timestamp"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_purchase_timestamp]"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_purchase_timestamp]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].Columns[order_approved_at]"
+                      cachedDataType="wstr"
+                      cachedLength="300"
+                      cachedName="order_approved_at"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_approved_at]"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_approved_at]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].Columns[order_delivered_carrier_date]"
+                      cachedDataType="wstr"
+                      cachedLength="300"
+                      cachedName="order_delivered_carrier_date"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_delivered_carrier_date]"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_delivered_carrier_date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].Columns[order_delivered_customer_date]"
+                      cachedDataType="wstr"
+                      cachedLength="300"
+                      cachedName="order_delivered_customer_date"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_delivered_customer_date]"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_delivered_customer_date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].Columns[order_estimated_delivery_date]"
+                      cachedDataType="wstr"
+                      cachedLength="300"
+                      cachedName="order_estimated_delivery_date"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_estimated_delivery_date]"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_estimated_delivery_date]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_id]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[customer_id]"
+                      dataType="wstr"
+                      length="300"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_status]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_status" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_purchase_timestamp]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_purchase_timestamp" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_approved_at]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_approved_at" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_delivered_carrier_date]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_delivered_carrier_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_delivered_customer_date]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_delivered_customer_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input].ExternalColumns[order_estimated_delivery_date]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_estimated_delivery_date" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Orders.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Orders.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Orders.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Orders.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE Payments"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE Payments"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Payments]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE Payments.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OMAR-M-AZIZ.olistSales]"
+                  connectionManagerRefId="Package.ConnectionManagers[OMAR-M-AZIZ.olistSales]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].Columns[order_id]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="order_id"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].ExternalColumns[order_id]"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[order_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].Columns[payment_sequential]"
+                      cachedDataType="r8"
+                      cachedName="payment_sequential"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].ExternalColumns[payment_sequential]"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_sequential]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].Columns[payment_type]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="payment_type"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].ExternalColumns[payment_type]"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_type]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].Columns[payment_installments]"
+                      cachedDataType="r8"
+                      cachedName="payment_installments"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].ExternalColumns[payment_installments]"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_installments]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].Columns[payment_value]"
+                      cachedDataType="r8"
+                      cachedName="payment_value"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].ExternalColumns[payment_value]"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_value]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].ExternalColumns[order_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="order_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].ExternalColumns[payment_sequential]"
+                      dataType="r8"
+                      name="payment_sequential" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].ExternalColumns[payment_type]"
+                      dataType="wstr"
+                      length="255"
+                      name="payment_type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].ExternalColumns[payment_installments]"
+                      dataType="r8"
+                      name="payment_installments" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input].ExternalColumns[payment_value]"
+                      dataType="r8"
+                      name="payment_value" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE Payments.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE Payments.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE Payments.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE Payments.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE Payments.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Orders"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Orders"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Orders.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 6]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 6]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_id]"
+                      length="300"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_id]"
+                      name="order_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[customer_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[customer_id]"
+                      length="300"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[customer_id]"
+                      name="customer_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_status]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_status]"
+                      length="300"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_status]"
+                      name="order_status"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_purchase_timestamp]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_purchase_timestamp]"
+                      length="300"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_purchase_timestamp]"
+                      name="order_purchase_timestamp"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_approved_at]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_approved_at]"
+                      length="300"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_approved_at]"
+                      name="order_approved_at"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_delivered_carrier_date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_delivered_carrier_date]"
+                      length="300"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_delivered_carrier_date]"
+                      name="order_delivered_carrier_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_delivered_customer_date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_delivered_customer_date]"
+                      length="300"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_delivered_customer_date]"
+                      name="order_delivered_customer_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_estimated_delivery_date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_estimated_delivery_date]"
+                      length="300"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].Columns[order_estimated_delivery_date]"
+                      name="order_estimated_delivery_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_id]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[customer_id]"
+                      dataType="wstr"
+                      length="300"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_status]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_status" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_purchase_timestamp]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_purchase_timestamp" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_approved_at]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_approved_at" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_delivered_carrier_date]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_delivered_carrier_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_delivered_customer_date]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_delivered_customer_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output].ExternalColumns[order_estimated_delivery_date]"
+                      dataType="wstr"
+                      length="300"
+                      name="order_estimated_delivery_date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Orders.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Orders.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Order_details"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Order_details"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">olist_order_items_dataset$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Order_details.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[order_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[order_id]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[order_id]"
+                      name="order_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[order_item_id]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[order_item_id]"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[order_item_id]"
+                      name="order_item_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[product_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[product_id]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[product_id]"
+                      name="product_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[seller_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[seller_id]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[seller_id]"
+                      name="seller_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[shipping_limit_date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[shipping_limit_date]"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[shipping_limit_date]"
+                      name="shipping_limit_date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[price]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[price]"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[price]"
+                      name="price"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[freight_value]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[freight_value]"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[freight_value]"
+                      name="freight_value"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[order_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="order_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[order_item_id]"
+                      dataType="r8"
+                      name="order_item_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[product_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="product_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[seller_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="seller_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[shipping_limit_date]"
+                      dataType="date"
+                      name="shipping_limit_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[price]"
+                      dataType="r8"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].ExternalColumns[freight_value]"
+                      dataType="r8"
+                      name="freight_value" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[order_id]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[order_id]"
+                      name="order_id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[order_item_id]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[order_item_id]"
+                      name="order_item_id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[product_id]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[product_id]"
+                      name="product_id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[seller_id]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[seller_id]"
+                      name="seller_id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[shipping_limit_date]"
+                      dataType="date"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[shipping_limit_date]"
+                      name="shipping_limit_date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[price]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[price]"
+                      name="price" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[freight_value]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[freight_value]"
+                      name="freight_value" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Order_items"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Order_items"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Order_details]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Order_items.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OMAR-M-AZIZ.olistSales]"
+                  connectionManagerRefId="Package.ConnectionManagers[OMAR-M-AZIZ.olistSales]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].Columns[order_id]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="order_id"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[order_id]"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[order_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].Columns[order_item_id]"
+                      cachedDataType="r8"
+                      cachedName="order_item_id"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[order_item_id]"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[order_item_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].Columns[product_id]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="product_id"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[product_id]"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[product_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].Columns[seller_id]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="seller_id"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[seller_id]"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[seller_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].Columns[shipping_limit_date]"
+                      cachedDataType="date"
+                      cachedName="shipping_limit_date"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[shipping_limit_date]"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[shipping_limit_date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].Columns[price]"
+                      cachedDataType="r8"
+                      cachedName="price"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[price]"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[price]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].Columns[freight_value]"
+                      cachedDataType="r8"
+                      cachedName="freight_value"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[freight_value]"
+                      lineageId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output].Columns[freight_value]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[order_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="order_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[order_item_id]"
+                      dataType="r8"
+                      name="order_item_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[product_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="product_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[seller_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="seller_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[shipping_limit_date]"
+                      dataType="dbTimeStamp"
+                      name="shipping_limit_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[price]"
+                      dataType="r8"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input].ExternalColumns[freight_value]"
+                      dataType="r8"
+                      name="freight_value" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Order_items.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_items.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Order_items.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_items.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Order_items.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Order_reviewes"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Order_reviewes"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Order_reviewes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Order_reviewes.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OMAR-M-AZIZ.olistSales]"
+                  connectionManagerRefId="Package.ConnectionManagers[OMAR-M-AZIZ.olistSales]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].Columns[review_id]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="review_id"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_id]"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].Columns[order_id]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="order_id"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[order_id]"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[order_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].Columns[review_score]"
+                      cachedDataType="r8"
+                      cachedName="review_score"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_score]"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_score]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].Columns[review_comment_title]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="review_comment_title"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_comment_title]"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_comment_title]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].Columns[review_comment_message]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="review_comment_message"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_comment_message]"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_comment_message]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].Columns[review_creation_date]"
+                      cachedDataType="date"
+                      cachedName="review_creation_date"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_creation_date]"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_creation_date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].Columns[review_answer_timestamp]"
+                      cachedDataType="date"
+                      cachedName="review_answer_timestamp"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_answer_timestamp]"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_answer_timestamp]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="review_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[order_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="order_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_score]"
+                      dataType="r8"
+                      name="review_score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_comment_title]"
+                      dataType="wstr"
+                      length="255"
+                      name="review_comment_title" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_comment_message]"
+                      dataType="wstr"
+                      length="255"
+                      name="review_comment_message" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_creation_date]"
+                      dataType="dbTimeStamp"
+                      name="review_creation_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input].ExternalColumns[review_answer_timestamp]"
+                      dataType="dbTimeStamp"
+                      name="review_answer_timestamp" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Order_reviewes.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Order_reviewes.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviewes.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Order_reviewes.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Order_reviews"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Order_reviews"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">olist_order_reviews_dataset$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Order_reviews.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_id]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_id]"
+                      name="review_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[order_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[order_id]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[order_id]"
+                      name="order_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_score]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_score]"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_score]"
+                      name="review_score"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_comment_title]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_comment_title]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_comment_title]"
+                      name="review_comment_title"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_comment_message]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_comment_message]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_comment_message]"
+                      name="review_comment_message"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_creation_date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_creation_date]"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_creation_date]"
+                      name="review_creation_date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_answer_timestamp]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_answer_timestamp]"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].Columns[review_answer_timestamp]"
+                      name="review_answer_timestamp"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="review_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[order_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="order_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_score]"
+                      dataType="r8"
+                      name="review_score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_comment_title]"
+                      dataType="wstr"
+                      length="255"
+                      name="review_comment_title" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_comment_message]"
+                      dataType="wstr"
+                      length="255"
+                      name="review_comment_message" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_creation_date]"
+                      dataType="date"
+                      name="review_creation_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output].ExternalColumns[review_answer_timestamp]"
+                      dataType="date"
+                      name="review_answer_timestamp" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_id]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_id]"
+                      name="review_id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[order_id]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[order_id]"
+                      name="order_id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_score]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_score]"
+                      name="review_score" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_comment_title]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_comment_title]"
+                      name="review_comment_title" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_comment_message]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_comment_message]"
+                      name="review_comment_message" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_creation_date]"
+                      dataType="date"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_creation_date]"
+                      name="review_creation_date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_answer_timestamp]"
+                      dataType="date"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[review_answer_timestamp]"
+                      name="review_answer_timestamp" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Payments"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Payments"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">olist_order_payments_dataset$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Payments.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Payments.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[order_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].ExternalColumns[order_id]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[order_id]"
+                      name="order_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_sequential]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].ExternalColumns[payment_sequential]"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_sequential]"
+                      name="payment_sequential"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_type]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].ExternalColumns[payment_type]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_type]"
+                      name="payment_type"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_installments]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].ExternalColumns[payment_installments]"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_installments]"
+                      name="payment_installments"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_value]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].ExternalColumns[payment_value]"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].Columns[payment_value]"
+                      name="payment_value"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].ExternalColumns[order_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="order_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].ExternalColumns[payment_sequential]"
+                      dataType="r8"
+                      name="payment_sequential" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].ExternalColumns[payment_type]"
+                      dataType="wstr"
+                      length="255"
+                      name="payment_type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].ExternalColumns[payment_installments]"
+                      dataType="r8"
+                      name="payment_installments" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Output].ExternalColumns[payment_value]"
+                      dataType="r8"
+                      name="payment_value" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[order_id]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[order_id]"
+                      name="order_id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[payment_sequential]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[payment_sequential]"
+                      name="payment_sequential" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[payment_type]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[payment_type]"
+                      name="payment_type" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[payment_installments]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[payment_installments]"
+                      name="payment_installments" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[payment_value]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[payment_value]"
+                      name="payment_value" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Payments.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Excel Source Output]"
+              endId="Package\Data Flow Task\geo location.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Excel Source Output1]"
+              endId="Package\Data Flow Task\Order_items.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task\Order_details.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Excel Source Output2]"
+              endId="Package\Data Flow Task\Order_reviewes.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task\Order_reviews.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Excel Source Output3]"
+              endId="Package\Data Flow Task\OLE Payments.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task\Payments.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\OLE DB Orders.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\Orders.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="109.6,41.6"
+          Id="Package\Data Flow Task\Orders"
+          TopLeft="822.999987736344,19.9999997019768" />
+        <NodeLayout
+          Size="148.8,41.6"
+          Id="Package\Data Flow Task\OLE DB Orders"
+          TopLeft="822.999987736344,128.99999807775" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="877.799987736344,61.5999997019768">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="19.6000000000001,67.3999983757734"
+              Start="0,0"
+              End="19.6000000000001,59.8999983757734">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.6999991878867" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.6999991878867"
+                    Point2="0,33.6999991878867"
+                    Point3="4,33.6999991878867" />
+                  <mssgle:LineSegment
+                    End="15.6000000000001,33.6999991878867" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15.6000000000001,33.6999991878867"
+                    Point2="19.6000000000001,33.6999991878867"
+                    Point3="19.6000000000001,37.6999991878867" />
+                  <mssgle:LineSegment
+                    End="19.6000000000001,59.8999983757734" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Data Flow Task\Excel Source"
+          TopLeft="645.99999037385,18.9999997168779" />
+        <NodeLayout
+          Size="135.2,41.6"
+          Id="Package\Data Flow Task\geo location"
+          TopLeft="618.999990776181,133.999998003244" />
+        <NodeLayout
+          Size="136,41.6"
+          Id="Package\Data Flow Task\Order_items"
+          TopLeft="407.999993920326,136.999997958541" />
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Data Flow Task\Order_reviewes"
+          TopLeft="238.999996438622,139.999997913837" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Excel Source Output]"
+          TopLeft="715.19999037385,60.5999997168779">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-28.5999995976684,73.3999982863665"
+              Start="0,0"
+              End="-28.5999995976684,65.8999982863665">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.6999991431832" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.6999991431832"
+                    Point2="0,36.6999991431832"
+                    Point3="-4,36.6999991431832" />
+                  <mssgle:LineSegment
+                    End="-24.5999995976684,36.6999991431832" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-24.5999995976684,36.6999991431832"
+                    Point2="-28.5999995976684,36.6999991431832"
+                    Point3="-28.5999995976684,40.6999991431832" />
+                  <mssgle:LineSegment
+                    End="-28.5999995976684,65.8999982863665" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="141.6,41.6"
+          Id="Package\Data Flow Task\Order_details"
+          TopLeft="449.999993294478,24.999999627471" />
+        <NodeLayout
+          Size="146.4,41.6"
+          Id="Package\Data Flow Task\Order_reviews"
+          TopLeft="253.499997198582,23.5000006258488" />
+        <NodeLayout
+          Size="124,41.6"
+          Id="Package\Data Flow Task\Payments"
+          TopLeft="53.9999991953373,29.9999995529651" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Excel Source Output1]"
+          TopLeft="520.799993294478,66.599999627471">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-44.7999993741512,70.39999833107"
+              Start="0,0"
+              End="-44.7999993741512,62.89999833107">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.199999165535" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.199999165535"
+                    Point2="0,35.199999165535"
+                    Point3="-4,35.199999165535" />
+                  <mssgle:LineSegment
+                    End="-40.7999993741512,35.199999165535" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-40.7999993741512,35.199999165535"
+                    Point2="-44.7999993741512,35.199999165535"
+                    Point3="-44.7999993741512,39.199999165535" />
+                  <mssgle:LineSegment
+                    End="-44.7999993741512,62.89999833107" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Excel Source Output2]"
+          TopLeft="326.699997198582,65.1000006258488">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11.7000007599593,74.8999972879887"
+              Start="0,0"
+              End="-11.7000007599593,67.3999972879887">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.4499986439943" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.4499986439943"
+                    Point2="0,37.4499986439943"
+                    Point3="-4,37.4499986439943" />
+                  <mssgle:LineSegment
+                    End="-7.70000075995932,37.4499986439943" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7.70000075995932,37.4499986439943"
+                    Point2="-11.7000007599593,37.4499986439943"
+                    Point3="-11.7000007599593,41.4499986439943" />
+                  <mssgle:LineSegment
+                    End="-11.7000007599593,67.3999972879887" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="146.4,41.6"
+          Id="Package\Data Flow Task\OLE Payments"
+          TopLeft="55.999999165535,138.999997928739" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Excel Source Output3]"
+          TopLeft="115.999999195337,71.5999995529651">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="13.1999999701978,67.3999983757735"
+              Start="0,0"
+              End="13.1999999701978,59.8999983757735">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.6999991878868" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.6999991878868"
+                    Point2="0,33.6999991878868"
+                    Point3="4,33.6999991878868" />
+                  <mssgle:LineSegment
+                    End="9.19999997019775,33.6999991878868" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9.19999997019775,33.6999991878868"
+                    Point2="13.1999999701978,33.6999991878868"
+                    Point3="13.1999999701978,37.6999991878868" />
+                  <mssgle:LineSegment
+                    End="13.1999999701978,59.8999983757735" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Orders">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\geo location">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Order_items">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Order_reviewes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Order_details">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Order_reviews">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Payments">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE Payments">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
