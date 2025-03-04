@@ -1,6 +1,6 @@
 CREATE TABLE FactOrderPayment
   (
-     order_sales_sk   INT Primary key identity,			-- surrogate key as a primary key
+     order_sales_sk			INT Primary key identity,	-- surrogate key as a primary key
 	 order_id				NVARCHAR(255),				-- degenerate dimension
 	 payment_sequential		FLOAT,						-- degenerate dimension
 	 customer_sk			INT,						-- surrogate key as a forigen key
@@ -14,11 +14,23 @@ CREATE TABLE FactOrderPayment
   );
 
 
- constraint FK_factsales_DimCustomer foreign key (customer_sk)
- references DimShipping (customer_sk),
-			  
- constraint FK_factsales_DimDate foreign key (Date_SK)
- references DimDate (DateSK),
-			  
- constraint FK_factsales_DimPaymentType foreign key (payment_type_sk)
- references DimPaymentType (payment_type_sk)
+
+
+
+--contraints 
+
+ alter table FactOrderPayment
+ add constraint FK_FactOrderPayment_DimCustomer foreign key (customer_sk)
+ references DimCustomer (customer_sk)
+
+ alter table FactOrderPayment			  
+ add constraint FK_FactOrderSales_DimDate foreign key (date_sk)
+ references DimDate (DateSK)
+
+ alter table FactOrderPayment			  
+ add constraint FK_FactOrderSales_DimDate1 foreign key (order_approved_at_fk)
+ references DimDate (DateSK)	
+ 	
+ alter table FactOrderPayment			  
+ add constraint FK_FactOrderPayment_DimPaymentType foreign key (payment_type_sk)
+ references DimPaymentType (payment_type_sk)	

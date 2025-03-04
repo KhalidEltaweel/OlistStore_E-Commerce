@@ -1,12 +1,12 @@
 if exists ( 
 		   select * from
 		   sys.foreign_keys
-		   where name = 'FK_factsales_DimPaymentType'
+		   where name = 'FK_FactOrderPayment_DimPaymentType'
 		   and 
-		   object_id= OBJECT_ID('OrderSalesFact'))
+		   object_id= OBJECT_ID('FactOrderPayment'))
 
-alter table FactOrderSales 
-drop constraint FK_factsales_DimPaymentType
+alter table FactOrderPayment 
+drop constraint FK_FactOrderPayment_DimPaymentType
 
 
 if exists (
@@ -19,10 +19,8 @@ drop table DimOrderReview
 
 GO
 -- create table Dim PaymentType
- create table DimPaymentType
-			  ( payment_sk			INT PRIMARY KEY IDENTITY,
-				payment_type			NVARCHAR(50))
 
-INSERT INTO DimPaymentType (payment_type)
-SELECT payment_Type
-FROM olist_staging.dbo.Payment_DIM
+ create table DimPaymentType
+			  ( payment_sk				int primary key identity,
+				payment_type			nvarchar(50))
+
