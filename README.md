@@ -129,6 +129,19 @@ The fact tables are connected to the dimension tables through foreign keys. This
 
 ## Cusomter Dashboards
 
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0001.jpg)
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0002.jpg)
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0003.jpg)
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0004.jpg)
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0005.jpg)
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0006.jpg)
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0007.jpg)
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0008.jpg)
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0009.jpg)
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0010.jpg)
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0011.jpg)
+
+
 ## Seller Dashboards
 
 ## Product Dashboards
