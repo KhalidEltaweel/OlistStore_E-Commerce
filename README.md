@@ -78,25 +78,25 @@ The fact tables are connected to the dimension tables through foreign keys. This
 
 # Paginated Reports Using SSRS 
 
-## Power BI Dashbaords 
+# Power BI Dashbaords 
 
-# Order Dashboards
+## Order Dashboards
 
-# Cusomter Dashboards
+## Cusomter Dashboards
 
-# Seller Dashboards
+## Seller Dashboards
 
-# Product Dashboards
+## Product Dashboards
 
-## Tableau Dashbaords
+# Tableau Dashbaords
 
-# Order Dashboards
+## Order Dashboards
 
-# Cusomter Dashboard
+## Cusomter Dashboard
 
-# Product Dashboard
+## Product Dashboard
 
-## Excel Dashbaord
-# Sales Dashboard
+# Excel Dashbaord
+## Sales Dashboard
 
-## Data Analysis Using Python
+# Data Analysis Using Python
