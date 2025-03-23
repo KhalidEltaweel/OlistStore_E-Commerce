@@ -45,7 +45,11 @@ After a customer purchases the product from Olist Store a seller gets notified t
 
 Attention
 An order might have multiple items.
+
+
 Each item might be fulfilled by a distinct seller.
+
+
 All text identifying stores and partners where replaced by the names of Game of Thrones great houses.
 
 # ERD 
