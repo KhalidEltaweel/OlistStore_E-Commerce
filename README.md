@@ -206,3 +206,7 @@ The fact tables are connected to the dimension tables through foreign keys. This
 ## Sales Dashboard
 
 # Data Analysis Using Python
+
+# Recommendations 
+
+
