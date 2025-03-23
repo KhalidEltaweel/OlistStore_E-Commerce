@@ -68,3 +68,35 @@ In our Olist E-Commerce project, we designed a dimensional model following the g
 3-Relationships:
 
 The fact tables are connected to the dimension tables through foreign keys. This allows for a flexible analysis of orders, payments, products, reviews, and more over time.
+
+# DWH Implementation Using SSIS
+
+
+# OLAP
+
+# OLAP Cube Using SSAS
+
+# Paginated Reports Using SSRS 
+
+## Power BI Dashbaords 
+
+# Order Dashboards
+
+# Cusomter Dashboards
+
+# Seller Dashboards
+
+# Product Dashboards
+
+## Tableau Dashbaords
+
+# Order Dashboards
+
+# Cusomter Dashboard
+
+# Product Dashboard
+
+## Excel Dashbaord
+# Sales Dashboard
+
+## Data Analysis Using Python
