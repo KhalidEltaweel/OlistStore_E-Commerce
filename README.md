@@ -221,14 +221,15 @@ The fact tables are connected to the dimension tables through foreign keys. This
 
 ## Order Dashboards
 
-![Order Dashboards]()
+![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Tableau%20Dashboards/ScreenShots/Sales%20Overview.png)
 
-![Order Dashboards]()
+
+![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Tableau%20Dashboards/ScreenShots/Total%20Sales%20By%20Customer%20States%20map.png)
 
 
 ## Customer Dashboard
 
-![Customer]()
+![Customer](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Tableau%20Dashboards/ScreenShots/Customer%20Overview.png)
 
 
 ## Product Dashboard
@@ -239,7 +240,7 @@ The fact tables are connected to the dimension tables through foreign keys. This
 ![Customer]()
 
 # Data Analysis Using Python
-
+`(https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Python/Python%20EDA.html)`
 
 # Results From All Pervious Analysis
 
