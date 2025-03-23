@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "OlistReport", "OlistReport\OlistReport.rptproj", "{10C471C2-7290-BDA9-AC1B-D4D6564A9D12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10C471C2-7290-BDA9-AC1B-D4D6564A9D12}.Debug|Default.ActiveCfg = Debug
+		{10C471C2-7290-BDA9-AC1B-D4D6564A9D12}.Debug|Default.Build.0 = Debug
+		{10C471C2-7290-BDA9-AC1B-D4D6564A9D12}.Debug|Default.Deploy.0 = Debug
+		{10C471C2-7290-BDA9-AC1B-D4D6564A9D12}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{10C471C2-7290-BDA9-AC1B-D4D6564A9D12}.DebugLocal|Default.Build.0 = DebugLocal
+		{10C471C2-7290-BDA9-AC1B-D4D6564A9D12}.Release|Default.ActiveCfg = Release
+		{10C471C2-7290-BDA9-AC1B-D4D6564A9D12}.Release|Default.Build.0 = Release
+		{10C471C2-7290-BDA9-AC1B-D4D6564A9D12}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB79F205-B9B4-4595-822E-5296D9D944FE}
+	EndGlobalSection
+EndGlobal
