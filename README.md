@@ -31,7 +31,40 @@ The dataset used in this project is publicly available and includes over 100,000
 # Mapping 
 ![Mapping](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Mapping/HRhd2Y0.png)
 
+# DB CREATION USING SSIS
+![DB CREATION USING SSIS]()
+
 # OLTP ERD 
 
+![OLTP ERD ](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/OLTP%20ERD/ERD.PNG)
 
 
+# DWH CONCEPTUAL MODEL
+
+In our Olist E-Commerce project, we designed a dimensional model following the galaxy schema approach, which allows for complex analysis and reporting across multiple fact tables. Below is a description of the main components of our model: 
+
+![DWH CONCEPTUAL MODEL](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Conceptual%20Model/Olist%20Dimensional%20Model.jpg)
+
+1-Fact Tables:
+
+-Order Sales Fact: Contains detailed information on orders, including customer, seller, product, price, and freight value.
+
+-Order Payment Fact: Tracks payment-specific information such as payment type, installments, and payment value.
+
+2-Dimension Tables:
+
+-Customer Dimension: Stores customer-related data, such as customer city, state, and unique customer identifier.
+
+-Seller Dimension: Holds data about sellers, including location details like city, state, and ZIP code prefix.
+
+-Product Dimension: Contains product attributes such as product name, category, and dimensions.
+
+-Date Dimension: Provides a breakdown of the dates into components like day, month, quarter, and year, useful for time-based analysis.
+
+-Review Dimension: Stores customer feedback details, including review scores and timestamps.
+
+-Payment Type Dimension: Tracks the type of payment method used for each transaction.
+
+3-Relationships:
+
+The fact tables are connected to the dimension tables through foreign keys. This allows for a flexible analysis of orders, payments, products, reviews, and more over time.
