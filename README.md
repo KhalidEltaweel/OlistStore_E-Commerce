@@ -5,11 +5,17 @@ Olist-E-Commerce is a graduation project developed as part of the Power BI Devel
 In this project, we:
 
 1- Created an ERD (Entity-Relationship Diagram): We started by analyzing the data structure and visualizing relationships.
+
 2- Built a Database: We used the Olist dataset from Kaggle to set up the database.
+
 3- Constructed a Data Warehouse: The data warehouse was designed using a galaxy schema to facilitate analytics and reporting.
+
 4- ETL Process: We implemented an Extract, Transform, Load (ETL) process using Microsoft SQL Server Integration Services (SSIS).
+
 5- OLAP Server: We built an OLAP (Online Analytical Processing) server using Microsoft SQL Server Analysis Services (SSAS).
+
 6- Data Analysis and Visualization: We extracted insights using Microsoft Power BI, Tableau, and Excel, with paginated reports created in SQL Server Reporting Services (SSRS).
+
 7- Data Mining: We used Python for deeper data analysis and mining.
 
 # About the Company
@@ -31,12 +37,19 @@ The dataset used in this project is publicly available and includes over 100,000
 The description of these tables is as follows:
 
 1- olist_orders_dataset: This table is connected to 4 other tables. It is used to connect all the details related to an order.
+
 2- olist_order_items_dataset: It contains the details of an item that had been purchased such as shipping date, price and so on.
+
 3- olist_order_reviews_dataset: It contains details related to any reviews posted by the customer on a particular product that he had purchased.
+
 4- olist_products_dataset: It contains related to a product such as the ID, category name and measurements.
+
 5- olist_order_payments_dataset: The information contained in this table is related to the payment details associated with a particular order.
+
 6- olist_customers_dataset: Details the customer base information of this firm.
+
 7- olist_geolocation_dataset: It contains geographical information related to both the sellers and customers.
+
 8- olist_sellers_dataset: This table contains the information related to all the sellers who have registered with this firm.
 
 # OLTP ERD 
