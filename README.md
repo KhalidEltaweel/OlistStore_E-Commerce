@@ -240,7 +240,7 @@ The fact tables are connected to the dimension tables through foreign keys. This
 ![Customer]()
 
 # Data Analysis Using Python
-`(https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Python/Python%20EDA.html)`
+![](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Python/Python%20EDA.html)
 
 # Results From All Pervious Analysis
 
