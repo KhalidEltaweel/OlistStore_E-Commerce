@@ -127,6 +127,25 @@ The fact tables are connected to the dimension tables through foreign keys. This
 
 ## Order Dashboards
 
+![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Order%20Dashboards/ScreenShots/Order%20Dashboards_page-0001.jpg)
+
+![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Order%20Dashboards/ScreenShots/Order%20Dashboards_page-0002.jpg)
+
+![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Order%20Dashboards/ScreenShots/Order%20Dashboards_page-0003.jpg)
+
+![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Order%20Dashboards/ScreenShots/Order%20Dashboards_page-0004.jpg)
+
+![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Order%20Dashboards/ScreenShots/Order%20Dashboards_page-0005.jpg)
+
+![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Order%20Dashboards/ScreenShots/Order%20Dashboards_page-0006.jpg)
+
+![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Order%20Dashboards/ScreenShots/Order%20Dashboards_page-0007.jpg)
+
+![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Order%20Dashboards/ScreenShots/Order%20Dashboards_page-0008.jpg)
+
+![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Order%20Dashboards/ScreenShots/Order%20Dashboards_page-0009.jpg)
+
+
 ## Cusomter Dashboards
 
 ![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0001.jpg)
@@ -143,8 +162,37 @@ The fact tables are connected to the dimension tables through foreign keys. This
 
 
 ## Seller Dashboards
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0001.jpg)
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0002.jpg)
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0003.jpg)
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0004.jpg)
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0005.jpg)
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0006.jpg)
+
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0007.jpg)
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0008.jpg)
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0009.jpg)
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0010.jpg)
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0011.jpg)
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0012.jpg)
+
+![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Seller%20Dashboards/ScreenShots/Seller%20Dashboards_page-0013.jpg)
+
 
 ## Product Dashboards
+
+![Product Dashboards]()
 
 # Tableau Dashbaords
 
