@@ -47,23 +47,23 @@ In our Olist E-Commerce project, we designed a dimensional model following the g
 
 1-Fact Tables:
 
--Order Sales Fact: Contains detailed information on orders, including customer, seller, product, price, and freight value.
+* Order Sales Fact: Contains detailed information on orders, including customer, seller, product, price, and freight value.
 
--Order Payment Fact: Tracks payment-specific information such as payment type, installments, and payment value.
+* Order Payment Fact: Tracks payment-specific information such as payment type, installments, and payment value.
 
 2-Dimension Tables:
 
--Customer Dimension: Stores customer-related data, such as customer city, state, and unique customer identifier.
+* Customer Dimension: Stores customer-related data, such as customer city, state, and unique customer identifier.
 
--Seller Dimension: Holds data about sellers, including location details like city, state, and ZIP code prefix.
+* Seller Dimension: Holds data about sellers, including location details like city, state, and ZIP code prefix.
 
--Product Dimension: Contains product attributes such as product name, category, and dimensions.
+* Product Dimension: Contains product attributes such as product name, category, and dimensions.
 
--Date Dimension: Provides a breakdown of the dates into components like day, month, quarter, and year, useful for time-based analysis.
+* Date Dimension: Provides a breakdown of the dates into components like day, month, quarter, and year, useful for time-based analysis.
 
--Review Dimension: Stores customer feedback details, including review scores and timestamps.
+* Review Dimension: Stores customer feedback details, including review scores.
 
--Payment Type Dimension: Tracks the type of payment method used for each transaction.
+* Payment Type Dimension: Tracks the type of payment method used for each transaction.
 
 3-Relationships:
 
