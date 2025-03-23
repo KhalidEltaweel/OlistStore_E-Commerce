@@ -241,8 +241,9 @@ The fact tables are connected to the dimension tables through foreign keys. This
 
 # Data Analysis Using Python
 
-You can find python notebook at the following like:
+You can find python notebook at the following link:
 [Python EDA](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Python/Python%20EDA.ipynb).
+
 # Results From All Pervious Analysis
 
 # Recommendations 
