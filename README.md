@@ -4,13 +4,13 @@ Olist-E-Commerce is a graduation project developed as part of the Power BI Devel
 # Summary
 In this project, we:
 
-1-Created an ERD (Entity-Relationship Diagram): We started by analyzing the data structure and visualizing relationships.
-2-Built a Database: We used the Olist dataset from Kaggle to set up the database.
-3-Constructed a Data Warehouse: The data warehouse was designed using a galaxy schema to facilitate analytics and reporting.
-4-ETL Process: We implemented an Extract, Transform, Load (ETL) process using Microsoft SQL Server Integration Services (SSIS).
-5-OLAP Server: We built an OLAP (Online Analytical Processing) server using Microsoft SQL Server Analysis Services (SSAS).
-6-Data Analysis and Visualization: We extracted insights using Microsoft Power BI, Tableau, and Excel, with paginated reports created in SQL Server Reporting Services (SSRS).
-7-Data Mining: We used Python for deeper data analysis and mining.
+1- Created an ERD (Entity-Relationship Diagram): We started by analyzing the data structure and visualizing relationships.
+2- Built a Database: We used the Olist dataset from Kaggle to set up the database.
+3- Constructed a Data Warehouse: The data warehouse was designed using a galaxy schema to facilitate analytics and reporting.
+4- ETL Process: We implemented an Extract, Transform, Load (ETL) process using Microsoft SQL Server Integration Services (SSIS).
+5- OLAP Server: We built an OLAP (Online Analytical Processing) server using Microsoft SQL Server Analysis Services (SSAS).
+6- Data Analysis and Visualization: We extracted insights using Microsoft Power BI, Tableau, and Excel, with paginated reports created in SQL Server Reporting Services (SSRS).
+7- Data Mining: We used Python for deeper data analysis and mining.
 
 # About the Company
 Olist is an e-commerce company headquartered in Sao Paulo, Brazil. The company connects small businesses to customers across multiple online marketplaces, acting as a single point of contact for sales and logistics.
