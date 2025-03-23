@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet2">
+    <Query>
+      <DataSourceReference>DataSourcexx</DataSourceReference>
+      <CommandType>StoredProcedure</CommandType>
+      <CommandText>GetSellerPerformanceReport</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="seller_id">
+        <DataField>seller_id</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Total_Orders">
+        <DataField>Total_Orders</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Total_Sales">
+        <DataField>Total_Sales</DataField>
+        <rd:TypeName>System.Double</rd:TypeName>
+      </Field>
+      <Field Name="Avg_Customer_Rating">
+        <DataField>Avg_Customer_Rating</DataField>
+        <rd:TypeName>System.Double</rd:TypeName>
+      </Field>
+      <Field Name="Avg_Delivery_Time">
+        <DataField>Avg_Delivery_Time</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

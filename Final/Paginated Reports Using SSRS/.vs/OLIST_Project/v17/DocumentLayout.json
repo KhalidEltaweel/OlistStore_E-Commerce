@@ -1,0 +1,82 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{507CCCE7-E13D-468B-8B55-2083A1666A60}|OLIST_Project\\OLIST_Project.rptproj|D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\SalesPerformance_1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{507CCCE7-E13D-468B-8B55-2083A1666A60}|OLIST_Project\\OLIST_Project.rptproj|solutionrelative:OLIST_Project\\SalesPerformance_1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507CCCE7-E13D-468B-8B55-2083A1666A60}|OLIST_Project\\OLIST_Project.rptproj|D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\Order_Details_By_Payments_Type_And_Year.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{507CCCE7-E13D-468B-8B55-2083A1666A60}|OLIST_Project\\OLIST_Project.rptproj|solutionrelative:OLIST_Project\\Order_Details_By_Payments_Type_And_Year.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507CCCE7-E13D-468B-8B55-2083A1666A60}|OLIST_Project\\OLIST_Project.rptproj|D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\GetSellerPerformanceReport.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{507CCCE7-E13D-468B-8B55-2083A1666A60}|OLIST_Project\\OLIST_Project.rptproj|solutionrelative:OLIST_Project\\GetSellerPerformanceReport.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507CCCE7-E13D-468B-8B55-2083A1666A60}|OLIST_Project\\OLIST_Project.rptproj|D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\GetRevenueByProductCategory.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{507CCCE7-E13D-468B-8B55-2083A1666A60}|OLIST_Project\\OLIST_Project.rptproj|solutionrelative:OLIST_Project\\GetRevenueByProductCategory.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 178,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SalesPerformance_1.rdl [Design]",
+              "DocumentMoniker": "D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\SalesPerformance_1.rdl",
+              "RelativeDocumentMoniker": "OLIST_Project\\SalesPerformance_1.rdl",
+              "ToolTip": "D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\SalesPerformance_1.rdl [Design]",
+              "RelativeToolTip": "OLIST_Project\\SalesPerformance_1.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-20T00:07:24.595Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order_Details_By_Payments_Type_And_Year.rdl [Design]",
+              "DocumentMoniker": "D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\Order_Details_By_Payments_Type_And_Year.rdl",
+              "RelativeDocumentMoniker": "OLIST_Project\\Order_Details_By_Payments_Type_And_Year.rdl",
+              "ToolTip": "D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\Order_Details_By_Payments_Type_And_Year.rdl [Design]",
+              "RelativeToolTip": "OLIST_Project\\Order_Details_By_Payments_Type_And_Year.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-19T23:18:14.147Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetSellerPerformanceReport.rdl [Design]",
+              "DocumentMoniker": "D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\GetSellerPerformanceReport.rdl",
+              "RelativeDocumentMoniker": "OLIST_Project\\GetSellerPerformanceReport.rdl",
+              "ToolTip": "D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\GetSellerPerformanceReport.rdl [Design]",
+              "RelativeToolTip": "OLIST_Project\\GetSellerPerformanceReport.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-19T23:18:01.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetRevenueByProductCategory.rdl [Design]",
+              "DocumentMoniker": "D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\GetRevenueByProductCategory.rdl",
+              "RelativeDocumentMoniker": "OLIST_Project\\GetRevenueByProductCategory.rdl",
+              "ToolTip": "D:\\iti\\0Graduation Project\\ETL\\OLIST_SSRS\\OLIST_Project\\GetRevenueByProductCategory.rdl [Design]",
+              "RelativeToolTip": "OLIST_Project\\GetRevenueByProductCategory.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-19T23:17:37.395Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

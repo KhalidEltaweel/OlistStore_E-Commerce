@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <DataSourceReference>Olist_DW_Data_sourcex</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>c20645af-c7f0-4dac-a5f3-dc5cc7a8fffa</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="order_ids_dataset">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandText>Select order_id,Count (order_item_id) as Total_items,row_number()over(order by [Order_details].order_id desc ) [row number]
+From Order_details
+group by order_id
+order by Count (order_item_id) Desc</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="order_id">
+          <DataField>order_id</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Total_items">
+          <DataField>Total_items</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="row_number">
+          <DataField>row number</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.95833in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.78333in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Rownumber</Value>
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#1dcf9f</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>order id</Value>
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#1dcf9f</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Total items</Value>
+                                  <Style>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#1dcf9f</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=RowNumber("order_ids_dataset")</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=IIf(RowNumber("order_ids_dataset") Mod 2=0,"LightGray","White")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="order_id">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!order_id.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>order_id</rd:DefaultName>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Drillthrough>
+                                  <ReportName>invoice</ReportName>
+                                  <Parameters>
+                                    <Parameter Name="id">
+                                      <Value>=Fields!order_id.Value</Value>
+                                    </Parameter>
+                                  </Parameters>
+                                </Drillthrough>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
+                          <ToolTip>Click on ID to go to the invoice</ToolTip>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=IIf(RowNumber("order_ids_dataset") Mod 2=0,"LightGray","White")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Total_items">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Total_items.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Total_items</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=IIf(RowNumber("order_ids_dataset") Mod 2=0,"LightGray","White")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>order_ids_dataset</DataSetName>
+            <Top>1.07167in</Top>
+            <Left>1.38in</Left>
+            <Height>0.5in</Height>
+            <Width>4.74166in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Image Name="Image1">
+            <Source>Embedded</Source>
+            <Value>olistlogo</Value>
+            <Sizing>FitProportional</Sizing>
+            <Left>5.03833in</Left>
+            <Height>1.00222in</Height>
+            <Width>1.08333in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Textbox Name="Textbox7">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>orders :</Value>
+                    <Style>
+                      <FontFamily>Segoe UI Light</FontFamily>
+                      <FontSize>18pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Color>#110d49</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox7</rd:DefaultName>
+            <Top>0.24389in</Top>
+            <Left>1.38in</Left>
+            <Height>0.53333in</Height>
+            <Width>1.48333in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>7.12166in</Width>
+      <Page>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="olistlogo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>a197e7a1-b833-496a-bc76-d96397d100fa</rd:ReportID>
+</Report>

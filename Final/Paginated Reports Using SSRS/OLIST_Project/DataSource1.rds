@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="DataSource1">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=DESKTOP-TTVAAC8\MSSQLSERVER_EV;Initial Catalog=Nehal</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>ad764cc0-afaa-49d6-b099-7fdc2361f647</DataSourceID>
+</RptDataSource>
