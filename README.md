@@ -28,3 +28,6 @@ The dataset used in this project is publicly available and includes over 100,000
 # ERD 
 ![ERD](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/ERD/Last%20Erd%20Image.png)
 
+# Mapping 
+![Mapping](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/ERD/Last%20Erd%20Image.png)
+
