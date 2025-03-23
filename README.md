@@ -118,10 +118,33 @@ The fact tables are connected to the dimension tables through foreign keys. This
 
 
 # OLAP
-
+![OLAP](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Conceptual%20Model/OLAP.JPG)
 # OLAP Cube Using SSAS
 
+![OLAP](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Cubes%20Using%20SSAS/ScreenShots/View.jpeg)
+
+![OLAP](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Cubes%20Using%20SSAS/ScreenShots/Schema.jpeg)
+
+![OLAP](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Cubes%20Using%20SSAS/ScreenShots/Browser%20Example%201.jpeg)
+
+![OLAP](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Cubes%20Using%20SSAS/ScreenShots/Browser%20Example2.jpeg)
+
 # Paginated Reports Using SSRS 
+
+![Paginated](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Paginated%20Reports%20Using%20SSRS/Screenshots/Customer%20Geographics.PNG)
+
+![Paginated](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Paginated%20Reports%20Using%20SSRS/Screenshots/Customer%20Satisfaction.PNG)
+
+![Paginated](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Paginated%20Reports%20Using%20SSRS/Screenshots/Payment%20Method%20Analysis.PNG)
+
+![Paginated](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Paginated%20Reports%20Using%20SSRS/Screenshots/Product%20Performance.PNG)
+
+![Paginated](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Paginated%20Reports%20Using%20SSRS/Screenshots/Sales%20Performance.PNG)
+
+![Paginated](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Paginated%20Reports%20Using%20SSRS/Screenshots/Seller%20Performance.PNG)
+
+![Paginated](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Paginated%20Reports%20Using%20SSRS/Screenshots/Total%20Revenue%20By%20%20Category-%20Filtered.PNG)
+
 
 # Power BI Dashbaords 
 
@@ -146,7 +169,7 @@ The fact tables are connected to the dimension tables through foreign keys. This
 ![Order Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Order%20Dashboards/ScreenShots/Order%20Dashboards_page-0009.jpg)
 
 
-## Cusomter Dashboards
+## Customer Dashboards
 
 ![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0001.jpg)
 ![Cusomter Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Customer%20Dashboards/ScreenShots/Customer%20Dashboards_page-0002.jpg)
@@ -198,14 +221,27 @@ The fact tables are connected to the dimension tables through foreign keys. This
 
 ## Order Dashboards
 
-## Cusomter Dashboard
+![Order Dashboards]()
+
+![Order Dashboards]()
+
+
+## Customer Dashboard
+
+![Customer]()
+
 
 ## Product Dashboard
+![Product]()
 
 # Excel Dashbaord
 ## Sales Dashboard
+![Customer]()
 
 # Data Analysis Using Python
+
+
+# Results From All Pervious Analysis
 
 # Recommendations 
 
