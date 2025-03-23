@@ -26,5 +26,5 @@ Olist is an e-commerce company headquartered in Sao Paulo, Brazil. The company c
 The dataset used in this project is publicly available and includes over 100,000 orders placed from 2016 to 2018 across various Brazilian marketplaces. You can access it on [Olist Dataset on Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data).
 
 # ERD 
-![Alt text]([URL_or_path_to_image](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/ERD/Last%20Erd%20Image.png))
+![ERD]([URL_or_path_to_image](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/ERD/Last%20Erd%20Image.png))
 
