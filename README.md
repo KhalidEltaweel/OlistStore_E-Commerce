@@ -53,13 +53,22 @@ Each item might be fulfilled by a distinct seller.
 All text identifying stores and partners where replaced by the names of Game of Thrones great houses.
 
 # ERD 
-![ERD](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/ERD/Last%20Erd%20Image.png)
+![ERD](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/ERD/Final%20ERD.jpg)
 
 # Mapping 
 ![Mapping](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Mapping/HRhd2Y0.png)
 
 # DB CREATION USING SSIS
-![DB CREATION USING SSIS]()
+
+![DB CREATION USING SSIS](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Database%20Using%20SQL%20Server%26SSIS/DB%20creation/ScreenShots/SSIS%201.jpeg)
+
+![DB CREATION USING SSIS](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Database%20Using%20SQL%20Server%26SSIS/DB%20creation/ScreenShots/SSIS%202.jpeg)
+
+## Geolocation Validation 
+
+![DB CREATION USING SSIS](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Database%20Using%20SQL%20Server%26SSIS/DB%20creation/ScreenShots/Geolocation%20Validation.jpeg)
+ 
+![DB CREATION USING SSIS](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Database%20Using%20SQL%20Server%26SSIS/DB%20creation/ScreenShots/Geolocation%20Validation2.jpeg)
 
 The description of these tables is as follows:
 
@@ -115,6 +124,29 @@ In our Olist E-Commerce project, we designed a dimensional model following the g
 The fact tables are connected to the dimension tables through foreign keys. This allows for a flexible analysis of orders, payments, products, reviews, and more over time.
 
 # DWH Implementation Using SSIS
+## Galaxy Schema
+![DWH](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/ScreenShots/DimCustomer.JPG)
+
+![DWH](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/ScreenShots/DimOrderReview.JPG)
+
+![DWH](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/ScreenShots/DimPaymentType.JPG)
+
+![DWH](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/ScreenShots/DimProduct.JPG)
+
+![DWH](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/ScreenShots/DimSeller.JPG)
+
+![DWH](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/ScreenShots/FactOrderPayment.JPG)
+
+![DWH](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/ScreenShots/FactOrderSales.JPG)
+
+## Incremental Load
+
+![DWH](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/ScreenShots/IncrementalLoad-FactOrderSales.JPG)
+
+![DWH](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/ScreenShots/IncrementalLoad-FactOrderPayment.JPG)
+
+## Triggers For Incremental Load
+
 
 
 # OLAP
