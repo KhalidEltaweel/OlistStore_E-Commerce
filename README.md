@@ -246,8 +246,22 @@ The fact tables are connected to the dimension tables through foreign keys. This
 ![Product](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Tableau%20Dashboards/ScreenShots/Product%20Dashboard.png)
 
 # Excel Dashbaord
+
+## Pivot Tables
+![Pivot](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/EXCEL%20Dashboards/Pivot/No.%20Orders%20By%20Order%20Status.JPG)
+
+
+![Pivot](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/EXCEL%20Dashboards/Pivot/Total%20Sales%20By%20Category.JPG)
+
+
+![Pivot](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/EXCEL%20Dashboards/Pivot/Total%20Sales%20By%20Customer%20City.JPG)
+
+
+![Pivot](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/EXCEL%20Dashboards/Pivot/Total%20Sales%20By%20Month%20Name.JPG)
+
+
 ## Sales Dashboard
-![Sales]()
+![Sales](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/EXCEL%20Dashboards/Olist%20Project_.jpg)
 
 # Data Analysis Using Python
 
@@ -273,8 +287,7 @@ You can find python notebook at the following link:
 *	Feedback Trends: The most common positive review keywords include "Recomendo" (recommend), "QUALIDADE" (quality), and "Entrega" (delivery). Negative feedback often mentions "demorou" (took too long) and "problemas" (problems).
 
 2. Order Insights
--	Order Fulfillment:
-*	97.02% delivery rate, with 70.85% of orders delayed.
+-	Order Fulfillment: 97.02% delivery rate, with 70.85% of orders delayed.
 *	Average delivery delay is 8.74 days.
 *	Cancellation rate is 0.63%.
 -	Payment Preferences:
@@ -282,7 +295,6 @@ You can find python notebook at the following link:
 *	Installment usage rate is 51.46%.
 *	Geographic Sales Performance: São Paulo, Rio de Janeiro, and Belo Horizonte are the top-performing cities.
 *	Order Dynamics: Peak order hour is 4 PM, with the slowest hour being 5 AM.
-
 *	Delivery Delays: 70.85% of orders are delayed, with an average delay of 8.74 days. The longest delays occur in cities like Bom Jesus dos Perdões (45 days).
 *	Cancellation Rate: The cancellation rate is relatively low at 0.63%, but it still represents 625 orders.
 *	Freight Costs: Total freight costs are 2.01M,which is a significant portion of the total sales (2.01M,which is a significant portion of the total sales(13.55M).
@@ -290,103 +302,134 @@ You can find python notebook at the following link:
 3. Seller Insights
 *	Total Sellers: 3,095
 *	Top Sellers by Sales: Seller IDs 6560211a19b47..., 4a3ca9315b744..., and cc419e0650a3c... are the top performers.
+
 4.	Seller Performance:
 *	Average review score is 4.09.
-o	Sellers in Bom Jesus dos Perdões have the highest average processing duration (45 days).
-•	Product Performance:
-o	Top product categories by sales: beleza_saude (1.26M),∗∗relogiospresentes∗∗(1.26M),∗∗relogiospresentes∗∗(1.2M), and cama_mesa_banho ($1.05M).
-o	Top product categories by orders: cama_mesa_banho (9,417 orders), beleza_saude (8,836 orders), and esporte_lazer (7,720 orders).
-•	Top Sellers: The top 10 sellers account for a significant portion of total sales, with Seller ID 6560211a19b47... generating $1.85K in sales.
-•	Seller Cities: Sellers in São Paulo and Rio de Janeiro dominate sales, while sellers in smaller cities like Bom Jesus dos Perdões have longer processing times.
-•	Product Categories: The top-performing categories (beleza_saude, relogios_presentes, and cama_mesa_banho) account for the majority of sales, while categories like ferramentas_jardim and automotivo underperform.
+*	Sellers in Bom Jesus dos Perdões have the highest average processing duration (45 days).
+*	Product Performance:
+*	Top product categories by sales: beleza_saude (1.26M),∗∗relogiospresentes∗∗(1.26M),∗∗relogiospresentes∗∗(1.2M), and cama_mesa_banho ($1.05M).
+*	Top product categories by orders: cama_mesa_banho (9,417 orders), beleza_saude (8,836 orders), and esporte_lazer (7,720 orders).
+*	Top Sellers: The top 10 sellers account for a significant portion of total sales, with Seller ID 6560211a19b47... generating $1.85K in sales.
+*	Seller Cities: Sellers in São Paulo and Rio de Janeiro dominate sales, while sellers in smaller cities like Bom Jesus dos Perdões have longer processing times.
+*	Product Categories: The top-performing categories (beleza_saude, relogios_presentes, and cama_mesa_banho) account for the majority of sales, while categories like ferramentas_jardim and automotivo underperform.
 
 
 4. Geographic Sales Performance
-•	Top Cities: São Paulo, Rio de Janeiro, and Belo Horizonte are the top-performing cities, contributing significantly to total sales.
-•	Underperforming Regions: Cities like Niterói and Guarulhos have lower sales and fewer customers, indicating untapped potential.
+*	Top Cities: São Paulo, Rio de Janeiro, and Belo Horizonte are the top-performing cities, contributing significantly to total sales.
+*	Underperforming Regions: Cities like Niterói and Guarulhos have lower sales and fewer customers, indicating untapped potential.
+
 5. Payment Trends
-•	Payment Methods: Credit cards are the most popular payment method (75.24%), followed by boleto (19.46%). Debit cards and vouchers are rarely used.
-•	Installment Usage: 51.46% of orders use installments, indicating that customers prefer flexible payment options.
+*	Payment Methods: Credit cards are the most popular payment method (75.24%), followed by boleto (19.46%). Debit cards and vouchers are rarely used.
+* Installment Usage: 51.46% of orders use installments, indicating that customers prefer flexible payment options.
 6. Product Performance
-•	Top Products: Categories like beleza_saude and relogios_presentes have the highest sales and orders.
-•	Low-Performing Products: Categories like ferramentas_jardim and automotivo have low sales and fewer orders, suggesting a need for better marketing or product improvements.
+* Top Products: Categories like beleza_saude and relogios_presentes have the highest sales and orders.
+*	Low-Performing Products: Categories like ferramentas_jardim and automotivo have low sales and fewer orders, suggesting a need for better marketing or product improvements.
 
 
 # Recommendations 
 
 1. Improve Delivery Times
-•	Issue: 70.85% of orders are delayed, with an average delay of 8.74 days.
-•	Recommendation: Optimize logistics and partner with more reliable shipping providers to reduce delivery delays. Focus on improving delivery times in cities with the highest delays.
+
+*	Issue: 70.85% of orders are delayed, with an average delay of 8.74 days.
+* Recommendation: Optimize logistics and partner with more reliable shipping providers to reduce delivery delays. Focus on improving delivery times in cities with the highest delays.
+
 2. Increase High-Value Orders
-•	Issue: Only 3.47% of orders are high-value.
-•	Recommendation: Implement upselling and cross-selling strategies, such as bundling products or offering discounts on high-value items. Target high-value customers with personalized offers.
+
+*	Issue: Only 3.47% of orders are high-value.
+*	Recommendation: Implement upselling and cross-selling strategies, such as bundling products or offering discounts on high-value items. Target high-value customers with personalized offers.
+
 3. Enhance Customer Retention
-•	Issue: Repeat purchase rate is 40%, and retention rates are low (2.03%-3.14% by quarter).
-•	Recommendation: Launch loyalty programs, offer exclusive discounts to returning customers, and send personalized follow-up emails to encourage repeat purchases.
+
+*	Issue: Repeat purchase rate is 40%, and retention rates are low (2.03%-3.14% by quarter).
+* Recommendation: Launch loyalty programs, offer exclusive discounts to returning customers, and send personalized follow-up emails to encourage repeat purchases.
+
 4. Optimize Payment Options
-•	Issue: 75.24% of orders are paid via credit card, but installment usage is only 51.46%.
-•	Recommendation: Promote installment payment options more aggressively, especially for high-value items, to make them more accessible to customers.
+*	Issue: 75.24% of orders are paid via credit card, but installment usage is only 51.46%.
+*	Recommendation: Promote installment payment options more aggressively, especially for high-value items, to make them more accessible to customers.
 5. Focus on Top-Performing Cities
-•	Issue: São Paulo, Rio de Janeiro, and Belo Horizonte account for the majority of sales.
-•	Recommendation: Allocate more marketing resources to these cities to further boost sales. Additionally, analyze underperforming cities to identify growth opportunities.
+*	Issue: São Paulo, Rio de Janeiro, and Belo Horizonte account for the majority of sales.
+*	Recommendation: Allocate more marketing resources to these cities to further boost sales. Additionally, analyze underperforming cities to identify growth opportunities.
+
 6. Improve Seller Performance
-•	Issue: Sellers in Bom Jesus dos Perdões have the highest processing duration (45 days).
-•	Recommendation: Provide training and resources to sellers with long processing times to improve efficiency. Consider incentivizing faster order processing.
+
+*	Issue: Sellers in Bom Jesus dos Perdões have the highest processing duration (45 days).
+*	Recommendation: Provide training and resources to sellers with long processing times to improve efficiency. Consider incentivizing faster order processing.
+
 7. Address Negative Reviews
-•	Issue: Average review score dropped to 3.80 in April.
-•	Recommendation: Analyze negative feedback from April and address common issues such as product quality, delivery delays, or customer service. Implement a system to respond to negative reviews promptly.
+*	Issue: Average review score dropped to 3.80 in April.
+*	Recommendation: Analyze negative feedback from April and address common issues such as product quality, delivery delays, or customer service. Implement a system to respond to negative reviews promptly.
+
 8. Boost Sales in Low-Performing Product Categories
-•	Issue: Categories like ferramentas_jardim and automotivo have lower sales compared to top categories.
-•	Recommendation: Run targeted promotions or discounts for low-performing categories to increase their visibility and sales.
+*	Issue: Categories like ferramentas_jardim and automotivo have lower sales compared to top categories.
+*	Recommendation: Run targeted promotions or discounts for low-performing categories to increase their visibility and sales.
+
 9. Optimize Peak Order Hours
-•	Issue: Peak order hour is 4 PM, with the slowest hour being 5 AM.
-•	Recommendation: Run flash sales or promotions during slower hours (e.g., early morning) to balance order distribution and reduce server load during peak times.
+*	Issue: Peak order hour is 4 PM, with the slowest hour being 5 AM.
+*	Recommendation: Run flash sales or promotions during slower hours (e.g., early morning) to balance order distribution and reduce server load during peak times.
+
 10. Expand Seller Base
-•	Issue: Only 3,095 sellers are active, with a few dominating sales.
-•	Recommendation: Recruit more sellers, especially in underrepresented regions or categories, to diversify the product offering and increase competition.
+*	Issue: Only 3,095 sellers are active, with a few dominating sales.
+*	Recommendation: Recruit more sellers, especially in underrepresented regions or categories, to diversify the product offering and increase competition.
+
 11. Target Underperforming Regions
-•	Issue: Cities like Niterói and Guarulhos have lower sales and fewer customers.
-•	Recommendation: Launch targeted marketing campaigns in these regions to increase brand awareness and attract more customers. Consider offering region-specific promotions or discounts.
+*	Issue: Cities like Niterói and Guarulhos have lower sales and fewer customers.
+*	Recommendation: Launch targeted marketing campaigns in these regions to increase brand awareness and attract more customers. Consider offering region-specific promotions or discounts.
+
 12. Reduce Freight Costs
-•	Issue: Freight costs are high ($2.01M), impacting overall profitability.
-•	Recommendation: Negotiate better rates with shipping providers or explore alternative logistics solutions. Consider offering free shipping thresholds to incentivize larger orders.
+*	Issue: Freight costs are high ($2.01M), impacting overall profitability.
+*	Recommendation: Negotiate better rates with shipping providers or explore alternative logistics solutions. Consider offering free shipping thresholds to incentivize larger orders.
+
 13. Improve Seller Training
-•	Issue: Sellers in smaller cities have longer processing times, leading to delays.
-•	Recommendation: Provide training programs for sellers to improve order processing efficiency. Offer incentives for sellers who consistently meet delivery deadlines.
+* Issue: Sellers in smaller cities have longer processing times, leading to delays.
+*	Recommendation: Provide training programs for sellers to improve order processing efficiency. Offer incentives for sellers who consistently meet delivery deadlines.
 14. Enhance Customer Feedback System
-•	Issue: Negative feedback often mentions delivery delays and product issues.
-•	Recommendation: Implement a more robust feedback system to address customer concerns promptly. Use AI tools to analyze feedback trends and identify recurring issues.
+
+*	Issue: Negative feedback often mentions delivery delays and product issues.
+*	Recommendation: Implement a more robust feedback system to address customer concerns promptly. Use AI tools to analyze feedback trends and identify recurring issues.
+
 15. Promote Underperforming Product Categories
-•	Issue: Categories like ferramentas_jardim and automotivo have low sales.
-•	Recommendation: Run targeted promotions, bundle these products with best-sellers, or improve product descriptions and images to make them more appealing.
+*	Issue: Categories like ferramentas_jardim and automotivo have low sales.
+*	Recommendation: Run targeted promotions, bundle these products with best-sellers, or improve product descriptions and images to make them more appealing.
+
 16. Optimize Marketing During Peak Hours
-•	Issue: Peak order hour is 4 PM, with the slowest hour being 5 AM.
-•	Recommendation: Run targeted ads or promotions during slower hours to balance order distribution. Use email marketing to engage customers during off-peak times.
+*	Issue: Peak order hour is 4 PM, with the slowest hour being 5 AM.
+*	Recommendation: Run targeted ads or promotions during slower hours to balance order distribution. Use email marketing to engage customers during off-peak times.
+
 17. Expand Payment Options
-•	Issue: Debit cards and vouchers are rarely used.
-•	Recommendation: Promote alternative payment methods like debit cards and vouchers to attract customers who prefer these options. Offer discounts for using specific payment methods.
+*	Issue: Debit cards and vouchers are rarely used.
+*	Recommendation: Promote alternative payment methods like debit cards and vouchers to attract customers who prefer these options. Offer discounts for using specific payment methods.
+
 18. Improve Product Quality
-•	Issue: Negative reviews mention product quality issues.
-•	Recommendation: Work with sellers to improve product quality and ensure that all items meet customer expectations. Implement stricter quality control measures.
+*	Issue: Negative reviews mention product quality issues.
+*	Recommendation: Work with sellers to improve product quality and ensure that all items meet customer expectations. Implement stricter quality control measures.
+
 19. Increase Seller Diversity
-•	Issue: A few sellers dominate sales, limiting product diversity.
-•	Recommendation: Recruit more sellers, especially in underrepresented categories or regions, to diversify the product offering and increase competition.
+*	Issue: A few sellers dominate sales, limiting product diversity.
+* Recommendation: Recruit more sellers, especially in underrepresented categories or regions, to diversify the product offering and increase competition.
+
 20. Leverage Data for Personalization
-•	Issue: Customer behavior data is underutilized.
-•	Recommendation: Use customer data to create personalized recommendations and offers. Implement AI-driven tools to analyze customer preferences and tailor marketing campaigns accordingly.
+
+*	Issue: Customer behavior data is underutilized.
+*	Recommendation: Use customer data to create personalized recommendations and offers. Implement AI-driven tools to analyze customer preferences and tailor marketing campaigns accordingly.
+
 21. Focus on Seasonal Trends
-•	Issue: Customer growth and sales fluctuate significantly by month.
-•	Recommendation: Analyze seasonal trends and plan marketing campaigns accordingly. For example, offer discounts or promotions during months with lower sales to boost revenue.
+*	Issue: Customer growth and sales fluctuate significantly by month.
+*	Recommendation: Analyze seasonal trends and plan marketing campaigns accordingly. For example, offer discounts or promotions during months with lower sales to boost revenue.
+
 22. Improve Review Response Rate
-•	Issue: Negative reviews are not always addressed promptly.
-•	Recommendation: Implement a system to respond to reviews within 24 hours, especially negative ones. Show customers that their feedback is valued and take steps to resolve issues.
+*	Issue: Negative reviews are not always addressed promptly.
+*	Recommendation: Implement a system to respond to reviews within 24 hours, especially negative ones. Show customers that their feedback is valued and take steps to resolve issues.
+
 23. Enhance Mobile Experience
-•	Issue: No data on mobile vs. desktop usage, but mobile optimization is critical for e-commerce.
-•	Recommendation: Ensure the platform is fully optimized for mobile devices, as many customers likely shop via smartphones. Improve app performance and user experience.
+*	Issue: No data on mobile vs. desktop usage, but mobile optimization is critical for e-commerce.
+*	Recommendation: Ensure the platform is fully optimized for mobile devices, as many customers likely shop via smartphones. Improve app performance and user experience.
+
 24. Offer Subscription Services
-•	Issue: Low repeat purchase rates in some categories.
-•	Recommendation: Introduce subscription services for high-demand products (e.g., beauty or health items) to encourage repeat purchases and build customer loyalty.
+*	Issue: Low repeat purchase rates in some categories.
+*	Recommendation: Introduce subscription services for high-demand products (e.g., beauty or health items) to encourage repeat purchases and build customer loyalty.
+
 25. Monitor Competitor Pricing
-•	Issue: Price sensitivity is high among customers.
-•	Recommendation: Regularly monitor competitor pricing and adjust strategies accordingly. Offer price-matching guarantees or exclusive deals to stay competitive.
+
+*	Issue: Price sensitivity is high among customers.
+*	Recommendation: Regularly monitor competitor pricing and adjust strategies accordingly. Offer price-matching guarantees or exclusive deals to stay competitive.
 
