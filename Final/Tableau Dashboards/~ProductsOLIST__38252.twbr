@@ -1,0 +1,2844 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xml:base='https://localhost' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/ProductsOLIST?rev=1.0' id='ProductsOLIST' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Customer+ (Multiple Connections)' inline='true' name='federated.08yi76f0r1hcbw1174n880wat36e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Customer.xls' name='excel-direct.1su4evm13bog7r0zrk93d02p4te8'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='DD.xls' name='excel-direct.1umfwes155cgxr1a2j2lq16fd0r2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='FacttSales.xls' name='excel-direct.05uis0q1ifa7tk1gf4v3q1tj416b'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='Product.xls' name='excel-direct.0hu99960aji62u1c3sfs40ei6dau'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='excel-direct.1su4evm13bog7r0zrk93d02p4te8' name='Customer' table='[Customer$]' type='table'>
+            <columns gridOrigin='A1:I10001:no:A1:I10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='customer_sk' ordinal='0' />
+              <column datatype='string' name='customer_id' ordinal='1' />
+              <column datatype='string' name='customer_unique_id' ordinal='2' />
+              <column datatype='string' name='customer_zip_code_prefix' ordinal='3' />
+              <column datatype='string' name='customer_city' ordinal='4' />
+              <column datatype='string' name='customer_state' ordinal='5' />
+              <column datatype='string' name='start_date' ordinal='6' />
+              <column datatype='string' name='end_date' ordinal='7' />
+              <column datatype='string' name='is_current' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.05uis0q1ifa7tk1gf4v3q1tj416b' name='Fact' table='[Fact$]' type='table'>
+            <columns gridOrigin='A1:V10001:no:A1:V10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='order_sales_sk' ordinal='0' />
+              <column datatype='string' name='order_id' ordinal='1' />
+              <column datatype='string' name='order_item_id' ordinal='2' />
+              <column datatype='string' name='product_sk' ordinal='3' />
+              <column datatype='string' name='customer_sk' ordinal='4' />
+              <column datatype='string' name='seller_sk' ordinal='5' />
+              <column datatype='string' name='order_review_sk' ordinal='6' />
+              <column datatype='string' name='date_sk' ordinal='7' />
+              <column datatype='string' name='order_approved_at_fk' ordinal='8' />
+              <column datatype='string' name='order_purchase_date_fk' ordinal='9' />
+              <column datatype='string' name='order_delivered_carrier_date_fk' ordinal='10' />
+              <column datatype='string' name='order_delivered_customer_date_fk' ordinal='11' />
+              <column datatype='string' name='order_estimated_delivery_date_fk' ordinal='12' />
+              <column datatype='string' name='shipping_limit_date_fk' ordinal='13' />
+              <column datatype='string' name='purchase_time' ordinal='14' />
+              <column datatype='string' name='order_approved_at_time' ordinal='15' />
+              <column datatype='string' name='order_delivered_carrier_time' ordinal='16' />
+              <column datatype='string' name='order_delivered_customer_time' ordinal='17' />
+              <column datatype='string' name='order_status' ordinal='18' />
+              <column datatype='string' name='price' ordinal='19' />
+              <column datatype='string' name='freight_value' ordinal='20' />
+              <column datatype='string' name='total_price' ordinal='21' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1umfwes155cgxr1a2j2lq16fd0r2' name='Date' table='[Date$]' type='table'>
+            <columns gridOrigin='A1:P10001:no:A1:P10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='DateSK' ordinal='0' />
+              <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ss' name='Date' ordinal='1' />
+              <column datatype='string' name='Day' ordinal='2' />
+              <column datatype='string' name='DaySuffix' ordinal='3' />
+              <column datatype='string' name='DayOfWeek' ordinal='4' />
+              <column datatype='string' name='DOWInMonth' ordinal='5' />
+              <column datatype='string' name='DayOfYear' ordinal='6' />
+              <column datatype='string' name='WeekOfYear' ordinal='7' />
+              <column datatype='string' name='WeekOfMonth' ordinal='8' />
+              <column datatype='string' name='Month' ordinal='9' />
+              <column datatype='string' name='MonthName' ordinal='10' />
+              <column datatype='string' name='Quarter' ordinal='11' />
+              <column datatype='string' name='QuarterName' ordinal='12' />
+              <column datatype='string' name='Year' ordinal='13' />
+              <column datatype='string' name='StandardDate' ordinal='14' />
+              <column datatype='string' name='HolidayText' ordinal='15' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0hu99960aji62u1c3sfs40ei6dau' name='Product' table='[Product$]' type='table'>
+            <columns gridOrigin='A1:M10001:no:A1:M10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='product_sk' ordinal='0' />
+              <column datatype='string' name='product_id' ordinal='1' />
+              <column datatype='string' name='product_category_name' ordinal='2' />
+              <column datatype='string' name='product_name_lenght' ordinal='3' />
+              <column datatype='string' name='product_description_lenght' ordinal='4' />
+              <column datatype='string' name='product_photos_qty' ordinal='5' />
+              <column datatype='string' name='product_weight_g' ordinal='6' />
+              <column datatype='string' name='product_length_cm' ordinal='7' />
+              <column datatype='string' name='product_height_cm' ordinal='8' />
+              <column datatype='string' name='product_width_cm' ordinal='9' />
+              <column datatype='string' name='start_date' ordinal='10' />
+              <column datatype='string' name='end_date' ordinal='11' />
+              <column datatype='string' name='is_current' ordinal='12' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[DOWInMonth]' value='[Date].[DOWInMonth]' />
+          <map key='[DateSK]' value='[Date].[DateSK]' />
+          <map key='[Date]' value='[Date].[Date]' />
+          <map key='[DayOfWeek]' value='[Date].[DayOfWeek]' />
+          <map key='[DayOfYear]' value='[Date].[DayOfYear]' />
+          <map key='[DaySuffix]' value='[Date].[DaySuffix]' />
+          <map key='[Day]' value='[Date].[Day]' />
+          <map key='[HolidayText]' value='[Date].[HolidayText]' />
+          <map key='[MonthName]' value='[Date].[MonthName]' />
+          <map key='[Month]' value='[Date].[Month]' />
+          <map key='[QuarterName]' value='[Date].[QuarterName]' />
+          <map key='[Quarter]' value='[Date].[Quarter]' />
+          <map key='[StandardDate]' value='[Date].[StandardDate]' />
+          <map key='[WeekOfMonth]' value='[Date].[WeekOfMonth]' />
+          <map key='[WeekOfYear]' value='[Date].[WeekOfYear]' />
+          <map key='[Year]' value='[Date].[Year]' />
+          <map key='[customer_city]' value='[Customer].[customer_city]' />
+          <map key='[customer_id]' value='[Customer].[customer_id]' />
+          <map key='[customer_sk (Fact)]' value='[Fact].[customer_sk]' />
+          <map key='[customer_sk]' value='[Customer].[customer_sk]' />
+          <map key='[customer_state]' value='[Customer].[customer_state]' />
+          <map key='[customer_unique_id]' value='[Customer].[customer_unique_id]' />
+          <map key='[customer_zip_code_prefix]' value='[Customer].[customer_zip_code_prefix]' />
+          <map key='[date_sk]' value='[Fact].[date_sk]' />
+          <map key='[end_date (Product)]' value='[Product].[end_date]' />
+          <map key='[end_date]' value='[Customer].[end_date]' />
+          <map key='[freight_value]' value='[Fact].[freight_value]' />
+          <map key='[is_current (Product)]' value='[Product].[is_current]' />
+          <map key='[is_current]' value='[Customer].[is_current]' />
+          <map key='[order_approved_at_fk]' value='[Fact].[order_approved_at_fk]' />
+          <map key='[order_approved_at_time]' value='[Fact].[order_approved_at_time]' />
+          <map key='[order_delivered_carrier_date_fk]' value='[Fact].[order_delivered_carrier_date_fk]' />
+          <map key='[order_delivered_carrier_time]' value='[Fact].[order_delivered_carrier_time]' />
+          <map key='[order_delivered_customer_date_fk]' value='[Fact].[order_delivered_customer_date_fk]' />
+          <map key='[order_delivered_customer_time]' value='[Fact].[order_delivered_customer_time]' />
+          <map key='[order_estimated_delivery_date_fk]' value='[Fact].[order_estimated_delivery_date_fk]' />
+          <map key='[order_id]' value='[Fact].[order_id]' />
+          <map key='[order_item_id]' value='[Fact].[order_item_id]' />
+          <map key='[order_purchase_date_fk]' value='[Fact].[order_purchase_date_fk]' />
+          <map key='[order_review_sk]' value='[Fact].[order_review_sk]' />
+          <map key='[order_sales_sk]' value='[Fact].[order_sales_sk]' />
+          <map key='[order_status]' value='[Fact].[order_status]' />
+          <map key='[price]' value='[Fact].[price]' />
+          <map key='[product_category_name]' value='[Product].[product_category_name]' />
+          <map key='[product_description_lenght]' value='[Product].[product_description_lenght]' />
+          <map key='[product_height_cm]' value='[Product].[product_height_cm]' />
+          <map key='[product_id]' value='[Product].[product_id]' />
+          <map key='[product_length_cm]' value='[Product].[product_length_cm]' />
+          <map key='[product_name_lenght]' value='[Product].[product_name_lenght]' />
+          <map key='[product_photos_qty]' value='[Product].[product_photos_qty]' />
+          <map key='[product_sk (Product)]' value='[Product].[product_sk]' />
+          <map key='[product_sk]' value='[Fact].[product_sk]' />
+          <map key='[product_weight_g]' value='[Product].[product_weight_g]' />
+          <map key='[product_width_cm]' value='[Product].[product_width_cm]' />
+          <map key='[purchase_time]' value='[Fact].[purchase_time]' />
+          <map key='[seller_sk]' value='[Fact].[seller_sk]' />
+          <map key='[shipping_limit_date_fk]' value='[Fact].[shipping_limit_date_fk]' />
+          <map key='[start_date (Product)]' value='[Product].[start_date]' />
+          <map key='[start_date]' value='[Customer].[start_date]' />
+          <map key='[total_price]' value='[Fact].[total_price]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Customer]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I10001:no:A1:I10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:V10001:no:A1:V10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Date]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P10001:no:A1:P10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Product]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M10001:no:A1:M10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_sk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_sk]</local-name>
+            <parent-name>[Customer]</parent-name>
+            <remote-alias>customer_sk</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[Customer]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_unique_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_unique_id]</local-name>
+            <parent-name>[Customer]</parent-name>
+            <remote-alias>customer_unique_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_zip_code_prefix</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_zip_code_prefix]</local-name>
+            <parent-name>[Customer]</parent-name>
+            <remote-alias>customer_zip_code_prefix</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_city</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_city]</local-name>
+            <parent-name>[Customer]</parent-name>
+            <remote-alias>customer_city</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_state]</local-name>
+            <parent-name>[Customer]</parent-name>
+            <remote-alias>customer_state</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[start_date]</local-name>
+            <parent-name>[Customer]</parent-name>
+            <remote-alias>start_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[end_date]</local-name>
+            <parent-name>[Customer]</parent-name>
+            <remote-alias>end_date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_current</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[is_current]</local-name>
+            <parent-name>[Customer]</parent-name>
+            <remote-alias>is_current</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_sales_sk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_sales_sk]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_sales_sk</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_item_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_item_id]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_item_id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_sk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_sk]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>product_sk</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_sk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_sk (Fact)]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>customer_sk</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seller_sk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[seller_sk]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>seller_sk</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_review_sk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_review_sk]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_review_sk</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_sk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[date_sk]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>date_sk</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_approved_at_fk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_approved_at_fk]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_approved_at_fk</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_purchase_date_fk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_purchase_date_fk]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_purchase_date_fk</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_delivered_carrier_date_fk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_delivered_carrier_date_fk]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_delivered_carrier_date_fk</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_delivered_customer_date_fk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_delivered_customer_date_fk]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_delivered_customer_date_fk</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_estimated_delivery_date_fk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_estimated_delivery_date_fk]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_estimated_delivery_date_fk</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shipping_limit_date_fk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[shipping_limit_date_fk]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>shipping_limit_date_fk</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purchase_time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[purchase_time]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>purchase_time</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_approved_at_time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_approved_at_time]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_approved_at_time</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_delivered_carrier_time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_delivered_carrier_time]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_delivered_carrier_time</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_delivered_customer_time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_delivered_customer_time]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_delivered_customer_time</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_status]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>order_status</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freight_value</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[freight_value]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>freight_value</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_price</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[total_price]</local-name>
+            <parent-name>[Fact]</parent-name>
+            <remote-alias>total_price</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateSK</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DateSK]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>DateSK</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Day]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>Day</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DaySuffix</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DaySuffix]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>DaySuffix</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DayOfWeek</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DayOfWeek]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>DayOfWeek</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOWInMonth</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DOWInMonth]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>DOWInMonth</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DayOfYear</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DayOfYear]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>DayOfYear</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WeekOfYear</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[WeekOfYear]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>WeekOfYear</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WeekOfMonth</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[WeekOfMonth]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>WeekOfMonth</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MonthName]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>MonthName</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Quarter]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QuarterName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[QuarterName]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>QuarterName</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StandardDate</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[StandardDate]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>StandardDate</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HolidayText</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[HolidayText]</local-name>
+            <parent-name>[Date]</parent-name>
+            <remote-alias>HolidayText</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_sk</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_sk (Product)]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>product_sk</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_id]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>product_id</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_category_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_category_name]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>product_category_name</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_name_lenght</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_name_lenght]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>product_name_lenght</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_description_lenght</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_description_lenght]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>product_description_lenght</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_photos_qty</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_photos_qty]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>product_photos_qty</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_weight_g</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_weight_g]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>product_weight_g</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_length_cm</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_length_cm]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>product_length_cm</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_height_cm</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_height_cm]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>product_height_cm</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_width_cm</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[product_width_cm]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>product_width_cm</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[start_date (Product)]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>start_date</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[end_date (Product)]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>end_date</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_current</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[is_current (Product)]</local-name>
+            <parent-name>[Product]</parent-name>
+            <remote-alias>is_current</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Customer_0D4BCE931B0C422A940158161B828495:qk]&quot;' value='NO. Customers' />
+          <alias key='&quot;[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Fact_4060E555421943E88DCAB64B22E7C2EF:qk]&quot;' value='NO. of Fact' />
+          <alias key='&quot;[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]&quot;' value='NO. Products' />
+          <alias key='&quot;[federated.08yi76f0r1hcbw1174n880wat36e].[ctd:order_id:qk]&quot;' value=' NO.Orders' />
+        </aliases>
+      </column>
+      <column caption='DOW In Month' datatype='string' name='[DOWInMonth]' role='dimension' type='nominal' />
+      <column caption='Date SK' datatype='string' name='[DateSK]' role='dimension' type='nominal' />
+      <column caption='Date (Date)' datatype='date' datatype-customized='true' name='[Date]' role='dimension' type='ordinal' />
+      <column caption='Day Of Week' datatype='string' name='[DayOfWeek]' role='dimension' type='nominal' />
+      <column caption='Day Of Year' datatype='string' name='[DayOfYear]' role='dimension' type='nominal' />
+      <column caption='Day Suffix' datatype='string' name='[DaySuffix]' role='dimension' type='nominal' />
+      <column caption='Holiday Text' datatype='string' name='[HolidayText]' role='dimension' type='nominal' />
+      <column caption='Month Name' datatype='string' name='[MonthName]' role='dimension' type='nominal' />
+      <column caption='Quarter Name' datatype='string' name='[QuarterName]' role='dimension' type='nominal' />
+      <column caption='Standard Date' datatype='string' name='[StandardDate]' role='dimension' type='nominal' />
+      <column caption='Week Of Month' datatype='string' name='[WeekOfMonth]' role='dimension' type='nominal' />
+      <column caption='Week Of Year' datatype='string' name='[WeekOfYear]' role='dimension' type='nominal' />
+      <column caption='Customer' datatype='table' name='[__tableau_internal_object_id__].[Customer_0D4BCE931B0C422A940158161B828495]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='table' name='[__tableau_internal_object_id__].[Date_A4773EF72ADB4D2EBB4C44D75734910F]' role='measure' type='quantitative' />
+      <column caption='Fact' datatype='table' name='[__tableau_internal_object_id__].[Fact_4060E555421943E88DCAB64B22E7C2EF]' role='measure' type='quantitative' />
+      <column caption='Product' datatype='table' name='[__tableau_internal_object_id__].[Product_80119D90BE6A4FD18DA9098850479836]' role='measure' type='quantitative' />
+      <column caption='Customer City' datatype='string' name='[customer_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+      <column caption='customer sk (Fact)' datatype='string' name='[customer_sk (Fact)]' role='dimension' type='nominal' />
+      <column caption='Customer Sk' datatype='string' name='[customer_sk]' role='dimension' type='nominal' />
+      <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Customer Unique Id' datatype='string' name='[customer_unique_id]' role='dimension' type='nominal' />
+      <column caption='Customer Zip Code Prefix' datatype='string' name='[customer_zip_code_prefix]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column caption='Date Sk' datatype='string' name='[date_sk]' role='dimension' type='nominal' />
+      <column caption='end date (Product)' datatype='string' name='[end_date (Product)]' role='dimension' type='nominal' />
+      <column caption='End Date' datatype='string' name='[end_date]' role='dimension' type='nominal' />
+      <column caption='Freight Value' datatype='string' name='[freight_value]' role='dimension' type='nominal' />
+      <column caption='is current (Product)' datatype='string' name='[is_current (Product)]' role='dimension' type='nominal' />
+      <column caption='Is Current' datatype='string' name='[is_current]' role='dimension' type='nominal' />
+      <column caption='Order Approved At Fk' datatype='string' name='[order_approved_at_fk]' role='dimension' type='nominal' />
+      <column caption='Order Approved At Time' datatype='string' name='[order_approved_at_time]' role='dimension' type='nominal' />
+      <column caption='Order Delivered Carrier Date Fk' datatype='string' name='[order_delivered_carrier_date_fk]' role='dimension' type='nominal' />
+      <column caption='Order Delivered Carrier Time' datatype='string' name='[order_delivered_carrier_time]' role='dimension' type='nominal' />
+      <column caption='Order Delivered Customer Date Fk' datatype='string' name='[order_delivered_customer_date_fk]' role='dimension' type='nominal' />
+      <column caption='Order Delivered Customer Time' datatype='string' name='[order_delivered_customer_time]' role='dimension' type='nominal' />
+      <column caption='Order Estimated Delivery Date Fk' datatype='string' name='[order_estimated_delivery_date_fk]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Order Id' datatype='string' default-role='measure' default-type='quantitative' name='[order_id]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Order Item Id' datatype='string' default-role='measure' default-type='quantitative' name='[order_item_id]' role='dimension' type='nominal' />
+      <column caption='Order Purchase Date Fk' datatype='string' name='[order_purchase_date_fk]' role='dimension' type='nominal' />
+      <column caption='Order Review Sk' datatype='string' name='[order_review_sk]' role='dimension' type='nominal' />
+      <column caption='Order Sales Sk' datatype='string' name='[order_sales_sk]' role='dimension' type='nominal' />
+      <column caption='Order Status' datatype='string' name='[order_status]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Price' datatype='string' default-role='measure' default-type='quantitative' name='[price]' role='dimension' type='nominal' />
+      <column caption='Product Category Name' datatype='string' name='[product_category_name]' role='dimension' type='nominal' />
+      <column caption='Product Description Lenght' datatype='string' name='[product_description_lenght]' role='dimension' type='nominal' />
+      <column caption='Product Height Cm' datatype='string' name='[product_height_cm]' role='dimension' type='nominal' />
+      <column caption='Product Id' datatype='string' name='[product_id]' role='dimension' type='nominal' />
+      <column caption='Product Length Cm' datatype='string' name='[product_length_cm]' role='dimension' type='nominal' />
+      <column caption='Product Name Lenght' datatype='string' name='[product_name_lenght]' role='dimension' type='nominal' />
+      <column caption='Product Photos Qty' datatype='string' name='[product_photos_qty]' role='dimension' type='nominal' />
+      <column caption='product sk (Product)' datatype='string' name='[product_sk (Product)]' role='dimension' type='nominal' />
+      <column caption='Product Sk' datatype='string' name='[product_sk]' role='dimension' type='nominal' />
+      <column caption='Product Weight G' datatype='string' name='[product_weight_g]' role='dimension' type='nominal' />
+      <column caption='Product Width Cm' datatype='string' name='[product_width_cm]' role='dimension' type='nominal' />
+      <column caption='Purchase Time' datatype='string' name='[purchase_time]' role='dimension' type='nominal' />
+      <column caption='Seller Sk' datatype='string' name='[seller_sk]' role='dimension' type='nominal' />
+      <column caption='Shipping Limit Date Fk' datatype='string' name='[shipping_limit_date_fk]' role='dimension' type='nominal' />
+      <column caption='start date (Product)' datatype='string' name='[start_date (Product)]' role='dimension' type='nominal' />
+      <column caption='Start Date' datatype='string' name='[start_date]' role='dimension' type='nominal' />
+      <column caption='Total Price' datatype='string' name='[total_price]' role='dimension' type='nominal' />
+      <column-instance column='[__tableau_internal_object_id__].[Customer_0D4BCE931B0C422A940158161B828495]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Customer_0D4BCE931B0C422A940158161B828495:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Fact_4060E555421943E88DCAB64B22E7C2EF]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Fact_4060E555421943E88DCAB64B22E7C2EF:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Product_80119D90BE6A4FD18DA9098850479836]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[order_id]' derivation='CountD' name='[ctd:order_id:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0zica0j18xpqrq17rnvp618wa13k.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/20/2025 12:24:21 PM' username=''>
+          <relation type='collection'>
+            <relation name='Customer_0D4BCE931B0C422A940158161B828495' table='[Extract].[Customer_0D4BCE931B0C422A940158161B828495]' type='table' />
+            <relation name='Fact_4060E555421943E88DCAB64B22E7C2EF' table='[Extract].[Fact_4060E555421943E88DCAB64B22E7C2EF]' type='table' />
+            <relation name='Date_A4773EF72ADB4D2EBB4C44D75734910F' table='[Extract].[Date_A4773EF72ADB4D2EBB4C44D75734910F]' type='table'>
+              <columns>
+                <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ss' name='Date' />
+              </columns>
+            </relation>
+            <relation name='Product_80119D90BE6A4FD18DA9098850479836' table='[Extract].[Product_80119D90BE6A4FD18DA9098850479836]' type='table' />
+          </relation>
+          <cols>
+            <map key='[DOWInMonth]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[DOWInMonth]' />
+            <map key='[DateSK]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[DateSK]' />
+            <map key='[Date]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[Date]' />
+            <map key='[DayOfWeek]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[DayOfWeek]' />
+            <map key='[DayOfYear]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[DayOfYear]' />
+            <map key='[DaySuffix]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[DaySuffix]' />
+            <map key='[Day]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[Day]' />
+            <map key='[HolidayText]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[HolidayText]' />
+            <map key='[MonthName]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[MonthName]' />
+            <map key='[Month]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[Month]' />
+            <map key='[QuarterName]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[QuarterName]' />
+            <map key='[Quarter]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[Quarter]' />
+            <map key='[StandardDate]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[StandardDate]' />
+            <map key='[WeekOfMonth]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[WeekOfMonth]' />
+            <map key='[WeekOfYear]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[WeekOfYear]' />
+            <map key='[Year]' value='[Date_A4773EF72ADB4D2EBB4C44D75734910F].[Year]' />
+            <map key='[customer_city]' value='[Customer_0D4BCE931B0C422A940158161B828495].[customer_city]' />
+            <map key='[customer_id]' value='[Customer_0D4BCE931B0C422A940158161B828495].[customer_id]' />
+            <map key='[customer_sk (Fact)]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[customer_sk]' />
+            <map key='[customer_sk]' value='[Customer_0D4BCE931B0C422A940158161B828495].[customer_sk]' />
+            <map key='[customer_state]' value='[Customer_0D4BCE931B0C422A940158161B828495].[customer_state]' />
+            <map key='[customer_unique_id]' value='[Customer_0D4BCE931B0C422A940158161B828495].[customer_unique_id]' />
+            <map key='[customer_zip_code_prefix]' value='[Customer_0D4BCE931B0C422A940158161B828495].[customer_zip_code_prefix]' />
+            <map key='[date_sk]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[date_sk]' />
+            <map key='[end_date (Product)]' value='[Product_80119D90BE6A4FD18DA9098850479836].[end_date]' />
+            <map key='[end_date]' value='[Customer_0D4BCE931B0C422A940158161B828495].[end_date]' />
+            <map key='[freight_value]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[freight_value]' />
+            <map key='[is_current (Product)]' value='[Product_80119D90BE6A4FD18DA9098850479836].[is_current]' />
+            <map key='[is_current]' value='[Customer_0D4BCE931B0C422A940158161B828495].[is_current]' />
+            <map key='[order_approved_at_fk]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_approved_at_fk]' />
+            <map key='[order_approved_at_time]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_approved_at_time]' />
+            <map key='[order_delivered_carrier_date_fk]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_delivered_carrier_date_fk]' />
+            <map key='[order_delivered_carrier_time]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_delivered_carrier_time]' />
+            <map key='[order_delivered_customer_date_fk]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_delivered_customer_date_fk]' />
+            <map key='[order_delivered_customer_time]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_delivered_customer_time]' />
+            <map key='[order_estimated_delivery_date_fk]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_estimated_delivery_date_fk]' />
+            <map key='[order_id]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_id]' />
+            <map key='[order_item_id]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_item_id]' />
+            <map key='[order_purchase_date_fk]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_purchase_date_fk]' />
+            <map key='[order_review_sk]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_review_sk]' />
+            <map key='[order_sales_sk]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_sales_sk]' />
+            <map key='[order_status]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[order_status]' />
+            <map key='[price]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[price]' />
+            <map key='[product_category_name]' value='[Product_80119D90BE6A4FD18DA9098850479836].[product_category_name]' />
+            <map key='[product_description_lenght]' value='[Product_80119D90BE6A4FD18DA9098850479836].[product_description_lenght]' />
+            <map key='[product_height_cm]' value='[Product_80119D90BE6A4FD18DA9098850479836].[product_height_cm]' />
+            <map key='[product_id]' value='[Product_80119D90BE6A4FD18DA9098850479836].[product_id]' />
+            <map key='[product_length_cm]' value='[Product_80119D90BE6A4FD18DA9098850479836].[product_length_cm]' />
+            <map key='[product_name_lenght]' value='[Product_80119D90BE6A4FD18DA9098850479836].[product_name_lenght]' />
+            <map key='[product_photos_qty]' value='[Product_80119D90BE6A4FD18DA9098850479836].[product_photos_qty]' />
+            <map key='[product_sk (Product)]' value='[Product_80119D90BE6A4FD18DA9098850479836].[product_sk]' />
+            <map key='[product_sk]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[product_sk]' />
+            <map key='[product_weight_g]' value='[Product_80119D90BE6A4FD18DA9098850479836].[product_weight_g]' />
+            <map key='[product_width_cm]' value='[Product_80119D90BE6A4FD18DA9098850479836].[product_width_cm]' />
+            <map key='[purchase_time]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[purchase_time]' />
+            <map key='[seller_sk]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[seller_sk]' />
+            <map key='[shipping_limit_date_fk]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[shipping_limit_date_fk]' />
+            <map key='[start_date (Product)]' value='[Product_80119D90BE6A4FD18DA9098850479836].[start_date]' />
+            <map key='[start_date]' value='[Customer_0D4BCE931B0C422A940158161B828495].[start_date]' />
+            <map key='[total_price]' value='[Fact_4060E555421943E88DCAB64B22E7C2EF].[total_price]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customer_sk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_sk]</local-name>
+              <parent-name>[Customer_0D4BCE931B0C422A940158161B828495]</parent-name>
+              <remote-alias>customer_sk</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99441</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_id]</local-name>
+              <parent-name>[Customer_0D4BCE931B0C422A940158161B828495]</parent-name>
+              <remote-alias>customer_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99441</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_unique_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_unique_id]</local-name>
+              <parent-name>[Customer_0D4BCE931B0C422A940158161B828495]</parent-name>
+              <remote-alias>customer_unique_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99441</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_zip_code_prefix</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_zip_code_prefix]</local-name>
+              <parent-name>[Customer_0D4BCE931B0C422A940158161B828495]</parent-name>
+              <remote-alias>customer_zip_code_prefix</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17893</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_city]</local-name>
+              <parent-name>[Customer_0D4BCE931B0C422A940158161B828495]</parent-name>
+              <remote-alias>customer_city</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3105</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_state]</local-name>
+              <parent-name>[Customer_0D4BCE931B0C422A940158161B828495]</parent-name>
+              <remote-alias>customer_state</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start_date]</local-name>
+              <parent-name>[Customer_0D4BCE931B0C422A940158161B828495]</parent-name>
+              <remote-alias>start_date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[end_date]</local-name>
+              <parent-name>[Customer_0D4BCE931B0C422A940158161B828495]</parent-name>
+              <remote-alias>end_date</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_current</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[is_current]</local-name>
+              <parent-name>[Customer_0D4BCE931B0C422A940158161B828495]</parent-name>
+              <remote-alias>is_current</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Customer_0D4BCE931B0C422A940158161B828495]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_sales_sk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_sales_sk]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_sales_sk</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>114096</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_id]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_id</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>114096</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_item_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_item_id]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_item_id</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_sk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_sk]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>product_sk</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20572</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_sk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_sk (Fact)]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>customer_sk</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>114096</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>seller_sk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[seller_sk]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>seller_sk</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3829</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_review_sk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_review_sk]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_review_sk</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>101779</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_sk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[date_sk]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>date_sk</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2114</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_approved_at_fk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_approved_at_fk]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_approved_at_fk</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2114</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_purchase_date_fk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_purchase_date_fk]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_purchase_date_fk</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2015</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_delivered_carrier_date_fk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_delivered_carrier_date_fk]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_delivered_carrier_date_fk</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1211</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_delivered_customer_date_fk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_delivered_customer_date_fk]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_delivered_customer_date_fk</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1471</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_estimated_delivery_date_fk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_estimated_delivery_date_fk]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_estimated_delivery_date_fk</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1160</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shipping_limit_date_fk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shipping_limit_date_fk]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>shipping_limit_date_fk</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1647</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>purchase_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[purchase_time]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>purchase_time</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60067</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_approved_at_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_approved_at_time]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_approved_at_time</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4046</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_delivered_carrier_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_delivered_carrier_time]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_delivered_carrier_time</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4099</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_delivered_customer_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_delivered_customer_time]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_delivered_customer_time</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3419</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_status]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>order_status</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4119</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>freight_value</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[freight_value]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>freight_value</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7811</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_price</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[total_price]</local-name>
+              <parent-name>[Fact_4060E555421943E88DCAB64B22E7C2EF]</parent-name>
+              <remote-alias>total_price</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Fact</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24378</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Fact_4060E555421943E88DCAB64B22E7C2EF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DateSK</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DateSK]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>DateSK</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18263</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Date</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Day]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>Day</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DaySuffix</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DaySuffix]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>DaySuffix</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DayOfWeek</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DayOfWeek]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>DayOfWeek</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DOWInMonth</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DOWInMonth]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>DOWInMonth</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DayOfYear</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DayOfYear]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>DayOfYear</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>560</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WeekOfYear</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[WeekOfYear]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>WeekOfYear</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WeekOfMonth</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[WeekOfMonth]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>WeekOfMonth</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>40</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MonthName]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>MonthName</remote-alias>
+              <ordinal>41</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quarter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Quarter]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>Quarter</remote-alias>
+              <ordinal>42</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>QuarterName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[QuarterName]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>QuarterName</remote-alias>
+              <ordinal>43</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>44</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StandardDate</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StandardDate]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>StandardDate</remote-alias>
+              <ordinal>45</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18263</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HolidayText</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HolidayText]</local-name>
+              <parent-name>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</parent-name>
+              <remote-alias>HolidayText</remote-alias>
+              <ordinal>46</ordinal>
+              <family>Date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Date_A4773EF72ADB4D2EBB4C44D75734910F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_sk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_sk (Product)]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>product_sk</remote-alias>
+              <ordinal>47</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32951</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_id]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>product_id</remote-alias>
+              <ordinal>48</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32951</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_category_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_category_name]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>product_category_name</remote-alias>
+              <ordinal>49</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>105</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_name_lenght</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_name_lenght]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>product_name_lenght</remote-alias>
+              <ordinal>50</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_description_lenght</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_description_lenght]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>product_description_lenght</remote-alias>
+              <ordinal>51</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3221</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_photos_qty</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_photos_qty]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>product_photos_qty</remote-alias>
+              <ordinal>52</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_weight_g</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_weight_g]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>product_weight_g</remote-alias>
+              <ordinal>53</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1439</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_length_cm</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_length_cm]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>product_length_cm</remote-alias>
+              <ordinal>54</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_height_cm</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_height_cm]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>product_height_cm</remote-alias>
+              <ordinal>55</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>130</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_width_cm</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_width_cm]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>product_width_cm</remote-alias>
+              <ordinal>56</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start_date (Product)]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>start_date</remote-alias>
+              <ordinal>57</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[end_date (Product)]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>end_date</remote-alias>
+              <ordinal>58</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_current</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[is_current (Product)]</local-name>
+              <parent-name>[Product_80119D90BE6A4FD18DA9098850479836]</parent-name>
+              <remote-alias>is_current</remote-alias>
+              <ordinal>59</ordinal>
+              <family>Product</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Product_80119D90BE6A4FD18DA9098850479836]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Egypt&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Customer' id='Customer_0D4BCE931B0C422A940158161B828495'>
+            <properties context=''>
+              <relation connection='excel-direct.1su4evm13bog7r0zrk93d02p4te8' name='Customer' table='[Customer$]' type='table'>
+                <columns gridOrigin='A1:I10001:no:A1:I10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='customer_sk' ordinal='0' />
+                  <column datatype='string' name='customer_id' ordinal='1' />
+                  <column datatype='string' name='customer_unique_id' ordinal='2' />
+                  <column datatype='string' name='customer_zip_code_prefix' ordinal='3' />
+                  <column datatype='string' name='customer_city' ordinal='4' />
+                  <column datatype='string' name='customer_state' ordinal='5' />
+                  <column datatype='string' name='start_date' ordinal='6' />
+                  <column datatype='string' name='end_date' ordinal='7' />
+                  <column datatype='string' name='is_current' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Customer_0D4BCE931B0C422A940158161B828495' table='[Extract].[Customer_0D4BCE931B0C422A940158161B828495]' type='table' />
+            </properties>
+          </object>
+          <object caption='Date' id='Date_A4773EF72ADB4D2EBB4C44D75734910F'>
+            <properties context=''>
+              <relation connection='excel-direct.1umfwes155cgxr1a2j2lq16fd0r2' name='Date' table='[Date$]' type='table'>
+                <columns gridOrigin='A1:P10001:no:A1:P10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='DateSK' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ss' name='Date' ordinal='1' />
+                  <column datatype='string' name='Day' ordinal='2' />
+                  <column datatype='string' name='DaySuffix' ordinal='3' />
+                  <column datatype='string' name='DayOfWeek' ordinal='4' />
+                  <column datatype='string' name='DOWInMonth' ordinal='5' />
+                  <column datatype='string' name='DayOfYear' ordinal='6' />
+                  <column datatype='string' name='WeekOfYear' ordinal='7' />
+                  <column datatype='string' name='WeekOfMonth' ordinal='8' />
+                  <column datatype='string' name='Month' ordinal='9' />
+                  <column datatype='string' name='MonthName' ordinal='10' />
+                  <column datatype='string' name='Quarter' ordinal='11' />
+                  <column datatype='string' name='QuarterName' ordinal='12' />
+                  <column datatype='string' name='Year' ordinal='13' />
+                  <column datatype='string' name='StandardDate' ordinal='14' />
+                  <column datatype='string' name='HolidayText' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Date_A4773EF72ADB4D2EBB4C44D75734910F' table='[Extract].[Date_A4773EF72ADB4D2EBB4C44D75734910F]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ss' name='Date' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Fact' id='Fact_4060E555421943E88DCAB64B22E7C2EF'>
+            <properties context=''>
+              <relation connection='excel-direct.05uis0q1ifa7tk1gf4v3q1tj416b' name='Fact' table='[Fact$]' type='table'>
+                <columns gridOrigin='A1:V10001:no:A1:V10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='order_sales_sk' ordinal='0' />
+                  <column datatype='string' name='order_id' ordinal='1' />
+                  <column datatype='string' name='order_item_id' ordinal='2' />
+                  <column datatype='string' name='product_sk' ordinal='3' />
+                  <column datatype='string' name='customer_sk' ordinal='4' />
+                  <column datatype='string' name='seller_sk' ordinal='5' />
+                  <column datatype='string' name='order_review_sk' ordinal='6' />
+                  <column datatype='string' name='date_sk' ordinal='7' />
+                  <column datatype='string' name='order_approved_at_fk' ordinal='8' />
+                  <column datatype='string' name='order_purchase_date_fk' ordinal='9' />
+                  <column datatype='string' name='order_delivered_carrier_date_fk' ordinal='10' />
+                  <column datatype='string' name='order_delivered_customer_date_fk' ordinal='11' />
+                  <column datatype='string' name='order_estimated_delivery_date_fk' ordinal='12' />
+                  <column datatype='string' name='shipping_limit_date_fk' ordinal='13' />
+                  <column datatype='string' name='purchase_time' ordinal='14' />
+                  <column datatype='string' name='order_approved_at_time' ordinal='15' />
+                  <column datatype='string' name='order_delivered_carrier_time' ordinal='16' />
+                  <column datatype='string' name='order_delivered_customer_time' ordinal='17' />
+                  <column datatype='string' name='order_status' ordinal='18' />
+                  <column datatype='string' name='price' ordinal='19' />
+                  <column datatype='string' name='freight_value' ordinal='20' />
+                  <column datatype='string' name='total_price' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Fact_4060E555421943E88DCAB64B22E7C2EF' table='[Extract].[Fact_4060E555421943E88DCAB64B22E7C2EF]' type='table' />
+            </properties>
+          </object>
+          <object caption='Product' id='Product_80119D90BE6A4FD18DA9098850479836'>
+            <properties context=''>
+              <relation connection='excel-direct.0hu99960aji62u1c3sfs40ei6dau' name='Product' table='[Product$]' type='table'>
+                <columns gridOrigin='A1:M10001:no:A1:M10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='product_sk' ordinal='0' />
+                  <column datatype='string' name='product_id' ordinal='1' />
+                  <column datatype='string' name='product_category_name' ordinal='2' />
+                  <column datatype='string' name='product_name_lenght' ordinal='3' />
+                  <column datatype='string' name='product_description_lenght' ordinal='4' />
+                  <column datatype='string' name='product_photos_qty' ordinal='5' />
+                  <column datatype='string' name='product_weight_g' ordinal='6' />
+                  <column datatype='string' name='product_length_cm' ordinal='7' />
+                  <column datatype='string' name='product_height_cm' ordinal='8' />
+                  <column datatype='string' name='product_width_cm' ordinal='9' />
+                  <column datatype='string' name='start_date' ordinal='10' />
+                  <column datatype='string' name='end_date' ordinal='11' />
+                  <column datatype='string' name='is_current' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Product_80119D90BE6A4FD18DA9098850479836' table='[Extract].[Product_80119D90BE6A4FD18DA9098850479836]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[date_sk]' />
+              <expression op='[DateSK]' />
+            </expression>
+            <first-end-point object-id='Fact_4060E555421943E88DCAB64B22E7C2EF' />
+            <second-end-point object-id='Date_A4773EF72ADB4D2EBB4C44D75734910F' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[customer_sk]' />
+              <expression op='[customer_sk (Fact)]' />
+            </expression>
+            <first-end-point object-id='Customer_0D4BCE931B0C422A940158161B828495' />
+            <second-end-point object-id='Fact_4060E555421943E88DCAB64B22E7C2EF' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[product_sk]' />
+              <expression op='[product_sk (Product)]' />
+            </expression>
+            <first-end-point object-id='Fact_4060E555421943E88DCAB64B22E7C2EF' />
+            <second-end-point object-id='Product_80119D90BE6A4FD18DA9098850479836' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Cards'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/ProductsOLIST/Cards?rev=' id='113901394' path='/workbooks/ProductsOLIST' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer+ (Multiple Connections)' name='federated.08yi76f0r1hcbw1174n880wat36e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08yi76f0r1hcbw1174n880wat36e'>
+            <column caption='Customer' datatype='table' name='[__tableau_internal_object_id__].[Customer_0D4BCE931B0C422A940158161B828495]' role='measure' type='quantitative' />
+            <column caption='Product' datatype='table' name='[__tableau_internal_object_id__].[Product_80119D90BE6A4FD18DA9098850479836]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Customer_0D4BCE931B0C422A940158161B828495]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Customer_0D4BCE931B0C422A940158161B828495:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Product_80119D90BE6A4FD18DA9098850479836]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[order_id]' derivation='CountD' name='[ctd:order_id:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' caption='Order Id' datatype='string' default-role='measure' default-type='quantitative' name='[order_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08yi76f0r1hcbw1174n880wat36e].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Customer_0D4BCE931B0C422A940158161B828495:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.08yi76f0r1hcbw1174n880wat36e].[ctd:order_id:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.08yi76f0r1hcbw1174n880wat36e].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]&quot;</bucket>
+              <bucket>&quot;[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Customer_0D4BCE931B0C422A940158161B828495:qk]&quot;</bucket>
+              <bucket>&quot;[federated.08yi76f0r1hcbw1174n880wat36e].[ctd:order_id:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.08yi76f0r1hcbw1174n880wat36e].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Customer_0D4BCE931B0C422A940158161B828495:qk]' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.08yi76f0r1hcbw1174n880wat36e].[:Measure Names]' value='73' />
+            <format attr='color' value='#000000' />
+            <format attr='color' data-class='subtotal' scope='cols' value='#000000' />
+            <format attr='font-weight' data-class='total' scope='cols' value='normal' />
+            <format attr='color' data-class='total' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='background-color' data-class='subtotal' value='#ffffff' />
+            <format attr='color' data-class='subtotal' value='#1b1b1b' />
+            <format attr='color' data-class='subtotal' scope='rows' value='#000000' />
+            <format attr='background-color' field='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Customer_0D4BCE931B0C422A940158161B828495:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.08yi76f0r1hcbw1174n880wat36e].[:Measure Names]' value='false' />
+            <format attr='color' field='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Customer_0D4BCE931B0C422A940158161B828495:qk]' value='#ffffff' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' scope='cols' value='normal' />
+            <format attr='font-style' scope='cols' value='normal' />
+            <format attr='color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#555555' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.08yi76f0r1hcbw1174n880wat36e].[Multiple Values]' />
+              <text column='[federated.08yi76f0r1hcbw1174n880wat36e].[:Measure Names]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run><![CDATA[  <[federated.08yi76f0r1hcbw1174n880wat36e].[:Measure Names]>
+]]></run>
+                <run fontsize='12'><![CDATA[<[federated.08yi76f0r1hcbw1174n880wat36e].[Multiple Values]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.8350828886032104' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.08yi76f0r1hcbw1174n880wat36e].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{D269C802-208F-4EB0-9BA6-D156C5BA960B}' />
+    </worksheet>
+    <worksheet name='ProductName_Count'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/ProductsOLIST/ProductName_Count?rev=' id='113901395' path='/workbooks/ProductsOLIST' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer+ (Multiple Connections)' name='federated.08yi76f0r1hcbw1174n880wat36e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08yi76f0r1hcbw1174n880wat36e'>
+            <column caption='Product' datatype='table' name='[__tableau_internal_object_id__].[Product_80119D90BE6A4FD18DA9098850479836]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Product_80119D90BE6A4FD18DA9098850479836]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[product_category_name]' derivation='None' name='[none:product_category_name:nk]' pivot='key' type='nominal' />
+            <column caption='Product Category Name' datatype='string' name='[product_category_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08yi76f0r1hcbw1174n880wat36e].[none:product_category_name:nk]'>
+            <groupfilter expression='COUNT([__tableau_internal_object_id__].[Product_80119D90BE6A4FD18DA9098850479836]) &gt;= 1000' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='level-members' level='[none:product_category_name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.08yi76f0r1hcbw1174n880wat36e].[none:product_category_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.08yi76f0r1hcbw1174n880wat36e].[none:product_category_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e7dbec</color>
+                <color>#ddc6e7</color>
+                <color>#d4b2e2</color>
+                <color>#cb9fde</color>
+                <color>#c28cd9</color>
+                <color>#b97ad4</color>
+                <color>#b169d0</color>
+                <color>#a958cb</color>
+                <color>#a048c6</color>
+                <color>#9939c2</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' />
+              <text column='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#9939c2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08yi76f0r1hcbw1174n880wat36e].[none:product_category_name:nk]</rows>
+        <cols>[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]</cols>
+      </table>
+      <simple-id uuid='{D820186F-FFC5-4A2E-ABCB-3799E083C75F}' />
+    </worksheet>
+    <worksheet name='time series'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/ProductsOLIST/timeseries?rev=' id='113901396' path='/workbooks/ProductsOLIST' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customer+ (Multiple Connections)' name='federated.08yi76f0r1hcbw1174n880wat36e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08yi76f0r1hcbw1174n880wat36e'>
+            <column caption='Date (Date)' datatype='date' datatype-customized='true' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Product' datatype='table' name='[__tableau_internal_object_id__].[Product_80119D90BE6A4FD18DA9098850479836]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Product_80119D90BE6A4FD18DA9098850479836]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e7dbec</color>
+                <color>#ddc6e7</color>
+                <color>#d4b2e2</color>
+                <color>#cb9fde</color>
+                <color>#c28cd9</color>
+                <color>#b97ad4</color>
+                <color>#b169d0</color>
+                <color>#a958cb</color>
+                <color>#a048c6</color>
+                <color>#9939c2</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' />
+              <text column='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#9939c2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]</rows>
+        <cols>[federated.08yi76f0r1hcbw1174n880wat36e].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{C071D057-22E8-4F8D-BC31-549FBF9220F6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <repository-location derived-from='https://haproxy-traffic-splitter/workbooks/ProductsOLIST/Dashboard1?rev=' id='113901397' path='/workbooks/ProductsOLIST' revision='' />
+      <style />
+      <size minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='11' is-centered='0' param='Image/download.png' type-v2='bitmap' w='99036' x='482' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='102247' id='3' is-centered='0' is-scaled='1' param='Image/4.png' type-v2='bitmap' w='99579' x='-181' y='-125' />
+        <zone h='21099' id='4' name='Cards' show-title='false' w='50993' x='5057' y='10237' />
+        <zone h='52185' id='5' name='ProductName_Count' show-title='false' w='23778' x='14424' y='38202' />
+        <zone h='54182' id='6' name='time series' show-title='false' w='33715' x='39856' y='36704' />
+        <zone h='5743' id='13' is-centered='0' is-scaled='1' param='Image/download.png' type-v2='bitmap' w='2950' x='14088' y='11361' />
+        <zone h='5243' id='14' is-centered='0' is-scaled='1' param='Image/Customers.png' type-v2='bitmap' w='2649' x='29862' y='11735' />
+        <zone h='5243' id='15' is-centered='0' is-scaled='1' param='Image/orders.png' type-v2='bitmap' w='2589' x='45274' y='11985' />
+        <zone h='7740' id='16' is-centered='0' is-scaled='1' param='Image/performance-metrics.png' type-v2='bitmap' w='4214' x='5238' y='32584' />
+        <zone h='8365' id='17' is-centered='0' is-scaled='1' param='Image/shopping-bag.png' type-v2='bitmap' w='3612' x='5358' y='43071' />
+        <zone h='33333' id='18' is-centered='0' is-scaled='1' param='Image/revenue-growth.png' type-v2='bitmap' w='33293' x='6020' y='12484' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='9' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone fixed-size='280' h='102247' id='3' is-centered='0' is-fixed='true' is-scaled='1' param='Image/4.png' type-v2='bitmap' w='99562' x='438' y='1498'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='118' h='21099' id='4' is-fixed='true' name='Cards' show-title='false' w='50996' x='6457' y='9238'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52185' id='5' is-fixed='true' name='ProductName_Count' show-title='false' w='23778' x='14424' y='38202'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51311' id='6' is-fixed='true' name='time series' show-title='false' w='33736' x='39831' y='39576'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4AF4C888-41D2-4777-A6B1-899BD72E1DF8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Cards'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B4C3E1B5-278F-49E6-BF2E-6F2488DC0408}' />
+    </window>
+    <window class='worksheet' name='ProductName_Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3AAFD7D5-7938-44CB-8A8E-D8AD96B2BA04}' />
+    </window>
+    <window class='worksheet' name='time series'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.08yi76f0r1hcbw1174n880wat36e].[__tableau_internal_object_id__].[cnt:Product_80119D90BE6A4FD18DA9098850479836:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A82E7364-4410-4C68-B558-EA448BFD32CC}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Cards'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ProductName_Count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='time series'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='18' />
+      <simple-id uuid='{40EEA395-1B70-48DE-814B-83692E324AE9}' />
+    </window>
+  </windows>
+</workbook>
