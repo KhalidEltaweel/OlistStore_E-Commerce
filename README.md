@@ -215,7 +215,17 @@ The fact tables are connected to the dimension tables through foreign keys. This
 
 ## Product Dashboards
 
-![Product Dashboards]()
+![Product Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Product%20Dashboards/ScreenShots/Num%20Of%20Products%20%26%20Products%20Sold_page-0001.jpg)
+
+![Product Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Product%20Dashboards/ScreenShots/Product%20Overview_page-0001.jpg)
+
+![Product Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Product%20Dashboards/ScreenShots/Products%20Regions_page-0001.jpg)
+
+
+![Product Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Product%20Dashboards/ScreenShots/Products%20Regions_page-0002.jpg)
+
+![Product Dashboards](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Power%20BI%20Dashboards/Product%20Dashboards/ScreenShots/Products%20Sales%20%26%20Units%20sold_page-0001.jpg)
+
 
 # Tableau Dashbaords
 
@@ -233,11 +243,11 @@ The fact tables are connected to the dimension tables through foreign keys. This
 
 
 ## Product Dashboard
-![Product]()
+![Product](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/Tableau%20Dashboards/ScreenShots/Product%20Dashboard.png)
 
 # Excel Dashbaord
 ## Sales Dashboard
-![Customer]()
+![Sales]()
 
 # Data Analysis Using Python
 
@@ -247,41 +257,41 @@ You can find python notebook at the following link:
 # Results From All Pervious Analysis
 
 1. Customer Insights
-•	Total Customers: 96,096
-•	Total Orders: 99,441
-•	Total Sales: $13.55M
-•	Total Freight: $2.01M
-•	Top Customer Cities: São Paulo, Rio de Janeiro, Belo Horizonte, Brasília, Curitiba, Campinas, Porto Alegre, Salvador.
-•	Customer Growth: Peaked in March (10,832 customers) and dipped in February (5,761 customers).
-•	Customer Retention: 10,275 returning customers, with a repeat purchase rate of 40%.
-•	Customer Behavior: Peak order hour is 4 PM, with Fridays being the busiest day.
-•	Price Sensitivity: 58.77% of orders are low-value, while only 3.47% are high-value.
-•	Customer Feedback: Average review score is 4.09, with the highest scores in March (4.25) and the lowest in April (3.80).
-•	Customer Distribution: São Paulo has the highest number of customers (14,984), followed by Rio de Janeiro (6,620) and Belo Horizonte (2,672).
-•	Customer Growth: Customer growth fluctuates significantly by month, with the highest growth in March (10,832 customers) and the lowest in February (5,761).
-•	Price Sensitivity: 58.77% of orders are low-value, indicating that most customers are price-sensitive and prefer affordable products.
-•	Feedback Trends: The most common positive review keywords include "Recomendo" (recommend), "QUALIDADE" (quality), and "Entrega" (delivery). Negative feedback often mentions "demorou" (took too long) and "problemas" (problems).
+*	Total Customers: 96,096
+*	Total Orders: 99,441
+*	Total Sales: $13.55M
+*	Total Freight: $2.01M
+*	Top Customer Cities: São Paulo, Rio de Janeiro, Belo Horizonte, Brasília, Curitiba, Campinas, Porto Alegre, Salvador.
+*	Customer Growth: Peaked in March (10,832 customers) and dipped in February (5,761 customers).
+*	Customer Retention: 10,275 returning customers, with a repeat purchase rate of 40%.
+*	Customer Behavior: Peak order hour is 4 PM, with Fridays being the busiest day.
+*	Price Sensitivity: 58.77% of orders are low-value, while only 3.47% are high-value.
+*	Customer Feedback: Average review score is 4.09, with the highest scores in March (4.25) and the lowest in April (3.80).
+*	Customer Distribution: São Paulo has the highest number of customers (14,984), followed by Rio de Janeiro (6,620) and Belo Horizonte (2,672).
+*	Customer Growth: Customer growth fluctuates significantly by month, with the highest growth in March (10,832 customers) and the lowest in February (5,761).
+*	Price Sensitivity: 58.77% of orders are low-value, indicating that most customers are price-sensitive and prefer affordable products.
+*	Feedback Trends: The most common positive review keywords include "Recomendo" (recommend), "QUALIDADE" (quality), and "Entrega" (delivery). Negative feedback often mentions "demorou" (took too long) and "problemas" (problems).
 
 2. Order Insights
-•	Order Fulfillment:
-o	97.02% delivery rate, with 70.85% of orders delayed.
-o	Average delivery delay is 8.74 days.
-o	Cancellation rate is 0.63%.
-•	Payment Preferences:
-o	75.24% of orders are paid via credit card, followed by boleto (19.46%).
-o	Installment usage rate is 51.46%.
-•	Geographic Sales Performance: São Paulo, Rio de Janeiro, and Belo Horizonte are the top-performing cities.
-•	Order Dynamics: Peak order hour is 4 PM, with the slowest hour being 5 AM.
+-	Order Fulfillment:
+*	97.02% delivery rate, with 70.85% of orders delayed.
+*	Average delivery delay is 8.74 days.
+*	Cancellation rate is 0.63%.
+-	Payment Preferences:
+*	75.24% of orders are paid via credit card, followed by boleto (19.46%).
+*	Installment usage rate is 51.46%.
+*	Geographic Sales Performance: São Paulo, Rio de Janeiro, and Belo Horizonte are the top-performing cities.
+*	Order Dynamics: Peak order hour is 4 PM, with the slowest hour being 5 AM.
 
-•	Delivery Delays: 70.85% of orders are delayed, with an average delay of 8.74 days. The longest delays occur in cities like Bom Jesus dos Perdões (45 days).
-•	Cancellation Rate: The cancellation rate is relatively low at 0.63%, but it still represents 625 orders.
-•	Freight Costs: Total freight costs are 2.01M,whichisasignificantportionofthetotalsales(2.01M,whichisasignificantportionofthetotalsales(13.55M).
-•	
+*	Delivery Delays: 70.85% of orders are delayed, with an average delay of 8.74 days. The longest delays occur in cities like Bom Jesus dos Perdões (45 days).
+*	Cancellation Rate: The cancellation rate is relatively low at 0.63%, but it still represents 625 orders.
+*	Freight Costs: Total freight costs are 2.01M,which is a significant portion of the total sales (2.01M,which is a significant portion of the total sales(13.55M).
+
 3. Seller Insights
-•	Total Sellers: 3,095
-•	Top Sellers by Sales: Seller IDs 6560211a19b47..., 4a3ca9315b744..., and cc419e0650a3c... are the top performers.
-•	Seller Performance:
-o	Average review score is 4.09.
+*	Total Sellers: 3,095
+*	Top Sellers by Sales: Seller IDs 6560211a19b47..., 4a3ca9315b744..., and cc419e0650a3c... are the top performers.
+4.	Seller Performance:
+*	Average review score is 4.09.
 o	Sellers in Bom Jesus dos Perdões have the highest average processing duration (45 days).
 •	Product Performance:
 o	Top product categories by sales: beleza_saude (1.26M),∗∗relogiospresentes∗∗(1.26M),∗∗relogiospresentes∗∗(1.2M), and cama_mesa_banho ($1.05M).
