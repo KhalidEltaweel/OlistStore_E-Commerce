@@ -464,7 +464,7 @@ Lowest Average Sales:
 
 3. Enhance Customer Retention
 
-*	Issue: Repeat purchase rate is 40%, and retention rates are low (2.03%-3.14% by quarter).
+*	Issue: Repeat purchase rate is 10%, and retention rates are low (2.03%-3.14% by quarter).
 * Recommendation: Launch loyalty programs, offer exclusive discounts to returning customers, and send personalized follow-up emails to encourage repeat purchases.
 
 4. Optimize Payment Options
