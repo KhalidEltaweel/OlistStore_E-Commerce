@@ -147,7 +147,11 @@ The fact tables are connected to the dimension tables through foreign keys. This
 
 ## Triggers For Incremental Load
 
+![Triggers](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/Incremental%20load/Triggers/Trigger1.JPG)
 
+![Triggers](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/Incremental%20load/Triggers/Trigger2.JPG)
+
+![Triggers](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Implementation%20Using%20SSIS/Incremental%20load/Triggers/Trigger3.JPG)
 
 # OLAP
 ![OLAP](https://github.com/KhalidEltaweel/OlistStore_E-Commerce/blob/main/Final/DWH%20Conceptual%20Model/OLAP.JPG)
@@ -357,6 +361,94 @@ You can find python notebook at the following link:
 * Top Products: Categories like beleza_saude and relogios_presentes have the highest sales and orders.
 *	Low-Performing Products: Categories like ferramentas_jardim and automotivo have low sales and fewer orders, suggesting a need for better marketing or product improvements.
 
+7. Product Sales and Units Sold
+* Total Products: 33,000
+
+* Total Units Sold: 113,000
+
+* Top Categories by Units Sold:
+
+* cama_mesa_banho: 11.27K units
+
+* beleza_saude: 9.73K units
+
+* esporte_lazer: 8.70K units
+
+* Top Categories by Sales:
+
+* beleza_saude: $1.26M
+
+* relogios_presentes: $1.20M
+
+* cama_mesa_banho: $1.05M
+
+* Low-Performing Categories:
+
+* ferramentas_jardim: $482.19K
+
+* automotivo: $587.94K
+
+* brinquedos: $629.12K
+
+8. Product Distribution by Category
+Number of Products per Category:
+
+* cama_mesa_banho: 3.0K products
+
+* beleza_saude: 2.9K products
+
+* esporte_lazer: 2.7K products
+
+Lowest Product Count:
+
+* brinquedos: 1.1K products
+
+* automotivo: 1.3K products
+
+* ferramentas_jardim: 1.4K products
+
+9. Regional Product Performance
+Top Categories by Region:
+
+* informatics_accessorios: $1,576.72 (7 orders)
+
+* cama_mesa_banho: $1,384.69 (10 orders)
+
+* relogios_presentes: $1,275.00 (3 orders)
+
+Lowest Categories by Region:
+
+* telefonia: $177.68 (5 orders)
+
+* beleza_saude: $209.89 (2 orders)
+
+* moveis_quarto: $190.00 (1 order)
+
+10. Average Sales per Product
+Highest Average Sales:
+
+* relogios_presentes: $425.00 per order
+
+* constructao_ferramentas_ferramentas: $729.00 per order
+
+* moveis_escritorio: $659.70 per order
+
+Lowest Average Sales:
+
+* telefonia: $35.54 per order
+
+* utilidades_domesticas: $71.68 per order
+
+* cool_stuff: $74.10 per order
+
+11. Freight Costs
+* Average Freight Cost: $20.35
+
+* Total Freight Costs: $2.01M
+
+* Impact on Profitability: High freight costs are eating into margins, especially for low-value products.
+
+
 
 # Recommendations 
 
@@ -372,7 +464,7 @@ You can find python notebook at the following link:
 
 3. Enhance Customer Retention
 
-*	Issue: Repeat purchase rate is 40%, and retention rates are low (2.03%-3.14% by quarter).
+*	Issue: Repeat purchase rate is 10%, and retention rates are low (2.03%-3.14% by quarter).
 * Recommendation: Launch loyalty programs, offer exclusive discounts to returning customers, and send personalized follow-up emails to encourage repeat purchases.
 
 4. Optimize Payment Options
@@ -465,3 +557,88 @@ You can find python notebook at the following link:
 *	Issue: Price sensitivity is high among customers.
 *	Recommendation: Regularly monitor competitor pricing and adjust strategies accordingly. Offer price-matching guarantees or exclusive deals to stay competitive.
 
+26. Focus on High-Margin Categories
+
+* Issue: Categories like relogios_presentes and constructao_ferramentas_ferramentas have high average sales but low order volumes.
+
+* Recommendation: Increase marketing efforts for high-margin categories to boost order volumes. Offer discounts or promotions to attract more customers to these categories.
+
+27. Optimize Low-Performing Categories
+
+* Issue: Categories like telefonia, beleza_saude, and moveis_quarto have low sales and order volumes.
+
+* Recommendation: Analyze customer feedback and product quality in these categories. Improve product descriptions, images, and pricing to make them more appealing.
+
+28. Expand Product Offerings in High-Demand Categories
+
+* Issue: Categories like cama_mesa_banho and beleza_saude have high demand but limited product variety.
+
+* Recommendation: Increase the number of products in high-demand categories to cater to diverse customer preferences. Collaborate with sellers to introduce new products.
+
+29. Reduce Freight Costs for Low-Value Products
+
+* Issue: High freight costs are impacting profitability, especially for low-value products.
+
+* Recommendation: Negotiate better shipping rates or offer free shipping thresholds for low-value products. Consider bundling low-value items to reduce per-unit freight costs.
+
+30. Improve Regional Product Performance
+
+* Issue: Some regions have low sales for specific categories (e.g., telefonia and beleza_saude).
+
+* Recommendation: Tailor marketing campaigns to regional preferences. For example, promote beleza_saude in regions where beauty products are popular, and telefonia in tech-savvy areas.
+
+31. Increase Cross-Selling Opportunities
+* Issue: Customers often purchase from a single category, missing out on cross-selling opportunities.
+
+* Recommendation: Implement cross-selling strategies by recommending complementary products. For example, suggest esporte_lazer items to customers buying beleza_saude products.
+
+32. Enhance Product Descriptions and Images
+* Issue: Low-performing categories may suffer from poor product descriptions or images.
+
+* Recommendation: Improve product listings with high-quality images, detailed descriptions, and customer reviews to increase conversion rates.
+
+33. Monitor Inventory Levels
+* Issue: Some categories may have stockouts or overstocking issues.
+
+* Recommendation: Use data analytics to monitor inventory levels and ensure optimal stock levels for high-demand products. Avoid overstocking low-performing items.
+
+34. Introduce Seasonal Products
+
+* Issue: Sales fluctuate by month, indicating seasonal trends.
+
+* Recommendation: Introduce seasonal products or promotions to capitalize on peak shopping periods. For example, offer holiday-themed items during festive seasons.
+
+35. Leverage Customer Reviews
+
+* Issue: Customer reviews can influence purchasing decisions, but some products lack sufficient reviews.
+
+* Recommendation: Encourage customers to leave reviews by offering incentives (e.g., discounts on future purchases). Highlight positive reviews on product pages.
+
+36. Focus on Niche Markets
+* Issue: Categories like instrumentos_musicals and malas_acessorios have low sales but may cater to niche markets.
+
+* Recommendation: Target niche markets with specialized marketing campaigns. Collaborate with influencers or experts in these niches to promote products.
+
+37. Improve Product Bundling
+
+* Issue: Customers may not be aware of complementary products.
+
+* Recommendation: Create product bundles (e.g., beleza_saude kits or esporte_lazer packages) to increase average order value and reduce shipping costs.
+
+38. Analyze Competitor Pricing
+
+* Issue: Price sensitivity is high among customers.
+
+* Recommendation: Regularly monitor competitor pricing and adjust strategies accordingly. Offer price-matching guarantees or exclusive deals to stay competitive.
+
+39. Increase Product Visibility
+
+* Issue: Some categories may not be easily discoverable on the platform.
+
+* Recommendation: Improve search and filtering options to make it easier for customers to find products. Highlight top-performing categories on the homepage.
+
+40. Offer Limited-Time Discounts
+
+* Issue: Low-performing categories may need a boost in sales.
+
+* Recommendation: Run limited-time discounts or flash sales for underperforming categories to attract more customers and clear excess inventory.
